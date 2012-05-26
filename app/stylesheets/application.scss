@@ -38,10 +38,8 @@ body {
 
 .page { 
   font-family: "ff-tisa-web-pro",serif;
-  // page acts as a container for our grid.
   @include container; 
 
-  // header and footer are full-width by default.
   header{ 
     clear: both; 
   }
@@ -49,38 +47,61 @@ body {
   footer {
     clear: both;
     text-align: center;
-    @include span-columns(12,12);
+    @include reset-columns;
     @include leader(1);
     @include trailer(1);
   }
-
-  // nav spans 3 columns of total 12.
-  nav { @include span-columns(2,12); }
-
-  .content { 
-    @include post(2);
-    @include span-columns(8,12);
+  nav {
+    p {
+      text-align: center;
+      @include at-breakpoint(60em 12) { 
+        text-align: left;
+      }
+    }
+  }
+  #follow_button {
+    position: relative;
+    top: 6px;
+  }
+  
+  @include at-breakpoint(60em 12) { 
+    nav { 
+      @include span-columns(2,12); 
+    }
+    .content { 
+      @include post(2);
+      @include span-columns(8,12);
+    }
   }
 }
 
 h1 {
-  @include adjust-font-size-to($base-font-size * 3, $lines:2);
+  @include adjust-font-size-to($base-font-size * 1.5, $lines:1);
   font-family: "ff-tisa-web-pro",serif;
+  @include at-breakpoint(60em 12) { 
+    @include adjust-font-size-to($base-font-size * 3, $lines:2);
+  }
 }
 
 header {
   h1 {
     &#logo {
-      @include adjust-font-size-to($base-font-size * 8, $lines:4);
+      @include adjust-font-size-to($base-font-size * 4, $lines:2);
       text-align: center;
       font-family: "learning-curve-dashed", cursive;
+      @include at-breakpoint(60em 12) { 
+        @include adjust-font-size-to($base-font-size * 8, $lines:4);
+      }
     }
   }
   h2 {
-    @include adjust-font-size-to($base-font-size * 1.33, $lines:2);
+    @include adjust-font-size-to($base-font-size * 1, $lines:1);
     text-weight: light;
     text-align: center;
     color: darken($background-color,40);
+    @include at-breakpoint(60em 12) { 
+      @include adjust-font-size-to($base-font-size * 1.33, $lines:2);
+    }
   }
   @include padding-leader(1);
   @include padding-trailer(1);

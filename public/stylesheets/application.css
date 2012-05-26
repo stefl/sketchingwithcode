@@ -121,68 +121,107 @@ body h1 a {
   display: table;
   clear: both;
 }
-/* line 45, ../../app/stylesheets/application.scss */
+/* line 43, ../../app/stylesheets/application.scss */
 .page header {
   clear: both;
 }
-/* line 49, ../../app/stylesheets/application.scss */
+/* line 47, ../../app/stylesheets/application.scss */
 .page footer {
   clear: both;
   text-align: center;
-  width: 100%;
-  float: left;
-  margin-right: 1.695%;
-  display: inline;
+  float: none;
+  width: auto;
+  margin-right: auto;
+  #margin-left: auto;
+  display: block;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-/* line 58, ../../app/stylesheets/application.scss */
-.page nav {
-  width: 15.254%;
-  float: left;
-  margin-right: 1.695%;
-  display: inline;
+/* line 55, ../../app/stylesheets/application.scss */
+.page nav p {
+  text-align: center;
 }
-/* line 60, ../../app/stylesheets/application.scss */
-.page .content {
-  margin-right: 16.949%;
-  width: 66.102%;
-  float: left;
-  margin-right: 1.695%;
-  display: inline;
+@media (min-width: 60em) {
+  /* line 55, ../../app/stylesheets/application.scss */
+  .page nav p {
+    text-align: left;
+  }
+}
+/* line 62, ../../app/stylesheets/application.scss */
+.page #follow_button {
+  position: relative;
+  top: 6px;
+}
+@media (min-width: 60em) {
+  /* line 68, ../../app/stylesheets/application.scss */
+  .page nav {
+    width: 15.254%;
+    float: left;
+    margin-right: 1.695%;
+    display: inline;
+  }
+  /* line 71, ../../app/stylesheets/application.scss */
+  .page .content {
+    margin-right: 16.949%;
+    width: 66.102%;
+    float: left;
+    margin-right: 1.695%;
+    display: inline;
+  }
 }
 
-/* line 66, ../../app/stylesheets/application.scss */
+/* line 78, ../../app/stylesheets/application.scss */
 h1 {
-  font-size: 3em;
+  font-size: 1.5em;
   line-height: 1em;
   font-family: "ff-tisa-web-pro",serif;
 }
+@media (min-width: 60em) {
+  /* line 78, ../../app/stylesheets/application.scss */
+  h1 {
+    font-size: 3em;
+    line-height: 1em;
+  }
+}
 
-/* line 71, ../../app/stylesheets/application.scss */
+/* line 86, ../../app/stylesheets/application.scss */
 header {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-/* line 73, ../../app/stylesheets/application.scss */
+/* line 88, ../../app/stylesheets/application.scss */
 header h1#logo {
-  font-size: 8em;
+  font-size: 4em;
   line-height: 0.75em;
   text-align: center;
   font-family: "learning-curve-dashed", cursive;
 }
-/* line 79, ../../app/stylesheets/application.scss */
+@media (min-width: 60em) {
+  /* line 88, ../../app/stylesheets/application.scss */
+  header h1#logo {
+    font-size: 8em;
+    line-height: 0.75em;
+  }
+}
+/* line 97, ../../app/stylesheets/application.scss */
 header h2 {
-  font-size: 1.33em;
-  line-height: 2.256em;
+  font-size: 1em;
+  line-height: 1.5em;
   text-weight: light;
   text-align: center;
   color: #9fba68;
 }
+@media (min-width: 60em) {
+  /* line 97, ../../app/stylesheets/application.scss */
+  header h2 {
+    font-size: 1.33em;
+    line-height: 2.256em;
+  }
+}
 
-/* line 91, ../../app/stylesheets/application.scss */
+/* line 112, ../../app/stylesheets/application.scss */
 article {
   background-color: rgba(255, 255, 255, 0.7);
   -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 8px;
@@ -193,26 +232,26 @@ article {
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
-/* line 98, ../../app/stylesheets/application.scss */
+/* line 119, ../../app/stylesheets/application.scss */
 article h1 {
   margin-bottom: 1.5em;
 }
-/* line 100, ../../app/stylesheets/application.scss */
+/* line 121, ../../app/stylesheets/application.scss */
 article h1 a, article h1 a:visited {
   color: #86a44b;
 }
-/* line 104, ../../app/stylesheets/application.scss */
+/* line 125, ../../app/stylesheets/application.scss */
 article h2.comments {
   text-align: center;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
 
-/* line 111, ../../app/stylesheets/application.scss */
+/* line 132, ../../app/stylesheets/application.scss */
 p {
   margin-bottom: 1.5em;
 }
-/* line 112, ../../app/stylesheets/application.scss */
+/* line 133, ../../app/stylesheets/application.scss */
 p:first-child {
   margin-top: 1.5em;
 }
