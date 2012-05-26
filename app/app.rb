@@ -9,8 +9,5 @@ class Sketching < Padrino::Application
 
   disable :sessions
   disable :flash
-  
-  before do
-    headers 'Cache-Control' => 'public, max-age=300' 
-  end
+
 end
