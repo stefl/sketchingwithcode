@@ -20,4 +20,4 @@ It's early days, but I can see some new thinking emerging here. If you're a cult
 
 By November I'll have written up a short paper about what I've learnt, which I'll be presenting at a Nesta event, and it'll be published in a collection with a number of others.
 
-In the spirit of openness, I've built this site using a mashup of Padrino and Jekyll, which is probably a bit crazy, but it does give me more freedom than a Tumblr/Posterous/Wordpress thing. I've put the [source code on github](http://github.com/stefl/sketchingwithcode) too.
+In the spirit of openness, I've built this site using a mashup of [Padrino](http://padrinorb.com) and [Jekyll](http://jekyllrb.com/), which is probably a bit crazy, but it does give me more freedom than a Tumblr/Posterous/Wordpress thing. I've put the [source code on github](http://github.com/stefl/sketchingwithcode) too.
