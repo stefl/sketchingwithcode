@@ -16,7 +16,7 @@ We are now beginning to see many more cultural organisations applying these tech
 
 It's early days, but I can see some new thinking emerging here. If you're a cultural organisation and you're excited by hacker culture and what could be achieved through open innovation and open data what are the actions you should take in order to embrace it? What projects are leading the way in applying these principles in successful ways? What does "success" mean in the context of cultural hacking? Do hack days lead to actual tangible results, or is it more about shifting a mind-set about what is possible with digital tools?
 
-[Nesta](http://nesta.org.uk) and the [Clore Leadership Programme](http://cloreleadership.org) have given me a small amount of research money to enable me to have conversations with people involved in and interested in these kinds of things, so I'm starting this site to pull together the conversations and thoughts I have along the way. 
+[Nesta](http://nesta.org.uk) and the [Clore Leadership Programme](http://cloreleadership.org) have given me a small amount of research money to enable me to have conversations with people involved in and interested in these kinds of things, so I'm starting this site to pull together whatever results and the thoughts I have along the way. 
 
 By November I'll have written up a short paper about what I've learnt, which I'll be presenting at a Nesta event, and it'll be published in a collection with a number of others.
 
