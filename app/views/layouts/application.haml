@@ -38,6 +38,8 @@
           %a{:title=>"Sketching with code", :href=>"/"} Sketching with Code
         %h2
           Culture, hack days and what happens next…
+      %section.content
+        = yield
       %nav  
         %p
           By 
@@ -56,8 +58,7 @@
           %span#follow_button
             <a href="https://twitter.com/stef" class="twitter-follow-button" data-button="grey" data-text-color="#FFFFFF" data-link-color="#FFFFFF" data-show-count="false">Follow @stef</a>
 
-      %section.content
-        = yield
+      
       %footer
         
           

@@ -67,17 +67,19 @@ body {
   @include at-breakpoint(60em 12) { 
     nav { 
       @include span-columns(2,12); 
+      @include omega();
     }
     .content { 
-      @include post(2);
+      @include prefix(2);
       @include span-columns(8,12);
     }
   }
 }
 
 h1 {
-  @include adjust-font-size-to($base-font-size * 1.5, $lines:1);
-  font-family: "ff-tisa-web-pro",serif;
+  @include adjust-font-size-to($base-font-size * 2, $lines:2);
+  font-family: "ratio", sans-serif;
+  font-weight: 100;
   @include at-breakpoint(60em 12) { 
     @include adjust-font-size-to($base-font-size * 3, $lines:2);
   }
@@ -89,18 +91,21 @@ header {
       @include adjust-font-size-to($base-font-size * 4, $lines:2);
       text-align: center;
       font-family: "learning-curve-dashed", cursive;
+      font-weight: normal;
       @include at-breakpoint(60em 12) { 
         @include adjust-font-size-to($base-font-size * 8, $lines:4);
       }
     }
   }
   h2 {
+    font-family: "ratio", sans-serif;
+    font-weight: 200;
     @include adjust-font-size-to($base-font-size * 1, $lines:1);
     text-weight: light;
     text-align: center;
     color: darken($background-color,40);
     @include at-breakpoint(60em 12) { 
-      @include adjust-font-size-to($base-font-size * 1.33, $lines:2);
+      @include adjust-font-size-to($base-font-size * 1.33, $lines:3);
     }
   }
   @include padding-leader(1);
@@ -114,8 +119,12 @@ article {
   @include box-shadow(rgba(0,0,0,0.05) 0px 0px 8px);
   @include padding-leader(1);
   @include padding-trailer(1);
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  @include at-breakpoint(60em 12) { 
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
   h1 {
     @include trailer(1);
     a, a:visited {
