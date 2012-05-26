@@ -6,10 +6,11 @@
 
 %article     
   = @content
-  #disqus_thread
-  %script{:src => "http://disqus.com/forums/sketchingwithcode/embed.js", :type => "text/javascript"}
-  %noscript
-    %a{:href => "http://sketchingwithcode.disqus.com/?url=ref"} View the discussion thread.
-  %a.dsq-brlink{:href => "http://disqus.com"}
-    blog comments powered by
-    %span.logo-disqus Disqus
+  #comments
+    #disqus_thread
+    %script{:src => "http://disqus.com/forums/sketchingwithcode/embed.js", :type => "text/javascript"}
+    %noscript
+      %a{:href => "http://sketchingwithcode.disqus.com/?url=ref"} View the discussion thread.
+    %a.dsq-brlink{:href => "http://disqus.com"}
+      blog comments powered by
+      %span.logo-disqus Disqus
