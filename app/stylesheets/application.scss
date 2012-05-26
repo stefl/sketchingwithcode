@@ -97,6 +97,9 @@ article {
   padding-right: 1.5em;
   h1 {
     @include trailer(1);
+    a, a:visited {
+      color: darken($background-color,50);
+    }
   }
   h2.comments {
     text-align: center;

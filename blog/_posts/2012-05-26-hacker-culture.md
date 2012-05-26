@@ -4,11 +4,11 @@ title: How and what are cultural organisations learning from hacker culture?
 published: true
 ---
 
-For the past few years I've immersed myself in what's becoming known as hacker culture.
+For the past few years I've immersed myself in the world of hack days, and become pretty interested in collaboratations between hackers and artists / cultural organisations.
 
 Not "hacker" in the sense of someone who does something evil to a bank's website, but rather "hacker" in the sense of someone who sees a problem, rapidly develops a quick solution in a playful, creative way, often with technology.
 
-I now self-identify as [a hacker](http://stef.io/hacks) (of the [second](http://paulgraham.com/gba.html) variety), and have been attending [hack days](http://en.wikipedia.org/wiki/Hackathon) where software people, designers and organisations with interesting open data get together to innovate in public, in teams that form on the day, always with surprising, funny and inspiration results. Examples of these events are [Culture Hack Day](http://culturehack.org.uk), [National Hack the Government Day](http://hacks.rewiredstate.org/events/nhtg12), [Rewired State](http://rewiredstate.org.uk) and [Culture Hack Scotland](http://www.welcometosync.com/hack/).
+I now self-identify as [a hacker](http://stef.io/hacks) (of the [second](http://paulgraham.com/gba.html) variety), and have been attending [hack days](http://en.wikipedia.org/wiki/Hackathon) where software people, designers and organisations with interesting open data get together to innovate in public, in teams that form on the day, always with surprising, funny and inspiration results. Examples of these events are [Culture Hack Day](http://culturehack.org.uk), [National Hack the Government Day](http://hacks.rewiredstate.org/events/nhtg12), [Rewired State](http://rewiredstate.org) and [Culture Hack Scotland](http://www.welcometosync.com/hack/).
 
 This kind of open innovation has been seen in the cultural sector in the [open space](http://en.wikipedia.org/wiki/Open-space_meeting) event format for some time, but the crucial extension is that these events and processes result in rapid development of digital and technology-based ideas and can be used to validate a variety of ideas before one or two are developed into actual products, services or cultural works.
 
