@@ -1,0 +1,87 @@
+@import "compass/reset";
+@import "compass/typography";
+@import "compass/css3";
+@import "compass/typography/vertical_rhythm";
+@import "compass/utilities/links/link-colors";
+
+$total-columns  : 12;             // a 12-column grid
+$column-width   : 4em;            // each column is 4em wide
+$gutter-width   : 1em;            // 1em gutters between columns
+$grid-padding   : $gutter-width;  // grid-padding equal to gutters
+
+$media-layout: 12;          // Use 12-col layout at matching min-width.
+$media-layout: 30em;        // At min 30em, use closest fitting layout.
+$media-layout: 30em 12;     // At min 30em, use 12-col layout.
+$media-layout: 12 60em;     // Use 12 cols up to max 60em.
+$media-layout: 30em 60em;   // Between min 30em & max 60em, use closest layout.
+$media-layout: 30em 12 60em;// Use 12 cols between min 30em & max 60em.
+$media-layout: 60em 12 30em;// Same. Larger length will always be max-width.
+$media-layout: 12 lt-ie9;  // Output is included under `.lt-ie9` class,
+$container-style: magic;
+
+$link-color:   #686945;
+
+@import "susy";
+
+@include establish-baseline;
+
+body {
+  background-color: #f8faf4;
+  a {
+    @include link-colors($link-color, lighten($link-color,10), lighten($link-color,15), lighten($link-color,20), lighten($link-color,25));
+  }
+  h1 a {
+    text-decoration: none;
+  }
+}
+
+.page { 
+  font-family: "ff-tisa-web-pro",serif;
+  // page acts as a container for our grid.
+  @include container; 
+
+  // header and footer are full-width by default.
+  header, footer { 
+    clear: both; 
+    background-color: rgba(255,255,255,0.7);
+    @include box-shadow(rgba(0,0,0,0.05) 0px 0px 8px);
+  }
+
+  // nav spans 3 columns of total 12.
+  nav { @include span-columns(2,12); }
+
+  .content { 
+    @include post(2);
+    @include span-columns(8,12);
+  }
+}
+
+h1 {
+  @include adjust-font-size-to($base-font-size * 6, $lines:4);
+  font-family: "learning-curve-dashed", cursive;
+}
+
+header {
+  h1 {
+    &#logo {
+      @include adjust-font-size-to($base-font-size * 8, $lines:4);
+      text-align: center;
+    }
+  }
+  h2 {
+    @include adjust-font-size-to($base-font-size * 1.33, $lines:2);
+    text-weight: light;
+    text-align: center;
+  }
+  @include padding-leader(1);
+  @include padding-trailer(1);
+  @include leader(1);
+  @include trailer(1);
+}
+
+p {
+  &:first-child {
+    @include leader;  
+  }
+  @include trailer;
+}

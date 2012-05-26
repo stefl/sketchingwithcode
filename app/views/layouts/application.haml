@@ -1,0 +1,65 @@
+-# coding: utf-8
+!!! 5
+%html{:lang => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %title
+      = @title + " | " if @title
+      Sketching with Code
+    %meta{:charset => "utf-8"}/
+    %link{:rel => "canonical", :href => @canonical || "http://sketchingwithcode.com#{request.path}"}
+    %link{:rel => "shortcut icon", :href=>"/icons/icon57x57.png"}/
+    %link{:rel => "apple-touch-icon-precomposed", :sizes=>"57x57", :href=>"/icons/icon57x57.png"}/
+    %link{:rel => "apple-touch-icon-precomposed", :sizes=>"72x72", :href=>"/icons/icon72x72.png"}/
+    %link{:rel => "apple-touch-icon-precomposed", :sizes=>"114x114", :href=>"/icons/icon114x114.png"}/
+    
+    %meta{:name => "keywords", :value => "Sketching with Code"}
+    %meta{:name => "description", :value => "A blog about culture and code"}
+    %meta{:name => "MSSmartTagsPreventParsing", :content => "true"}/
+    %meta{:"http-equiv" => "X-UA-Compatible", :content => "chrome=1"}/
+    %meta{:name=>"viewport", :content=>"width=device-width,initial-scale=1;maximum-scale=1;minimum-scale=1;user-scalable=no;"}/
+    %meta{:name=>"apple-mobile-web-app-capable", :content=>"yes"}/
+    %meta{:name=>"apple-mobile-web-app-status-bar-style", :content=>"black"}/
+    %link{:href => "/stylesheets/application.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}/
+    
+    = favicon_tag 'favicon.ico'
+    %script{:src=>"/assets/modernizr-2.0.6.min.js",:type=>"text/javascript"}
+  
+    <script type="text/javascript" src="http://use.typekit.com/sla1ora.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>    
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+
+  %body{:id=>(request.path.split("/")[1] rescue "")}
+    .page
+      %header            
+        %h1#logo
+          %a{:title=>"Sketching with code", :href=>"/"} Sketching with Code
+        %h2
+          Culture, hack days and what happens next…
+      %nav  
+        %div#follow_button
+          <a href="https://twitter.com/stef" class="twitter-follow-button" data-button="grey" data-text-color="#FFFFFF" data-link-color="#FFFFFF" data-show-count="false">Follow @stef</a>
+
+      %section.content
+        = yield
+        
+  %script{:src=>"/assets/libraries.js", :type=>"text/javascript"}
+  = yield_content :scripts
+  %script{:src=>"/assets/application.js", :type=>"text/javascript"} 
+  %script{:src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8", :type=>"text/javascript"}
+  - if false && Padrino.env == :production  
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-666119-5']);
+      _gaq.push(['_setDomainName', 'none']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  = "<!-- Rendered at #{Time.now} -->"

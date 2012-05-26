@@ -1,0 +1,15 @@
+- @section = "blog"
+
+- if ENV["RACK_ENV"] == "development"
+  :javascript
+    var disqus_developer = true;
+
+%article     
+  = @content
+  #disqus_thread
+  %script{:src => "http://disqus.com/forums/stef/embed.js", :type => "text/javascript"}
+  %noscript
+    %a{:href => "http://stef.disqus.com/?url=ref"} View the discussion thread.
+  %a.dsq-brlink{:href => "http://disqus.com"}
+    blog comments powered by
+    %span.logo-disqus Disqus
