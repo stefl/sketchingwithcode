@@ -45,7 +45,14 @@
           with some support from 
           %a{:href=>"http://cloreleadership.org"} Clore
           and 
-          %a{:href=>"http://nesta.org.uk"} Nesta
+          = succeed(".") do
+            %a{:href=>"http://nesta.org.uk"} Nesta
+        %p
+          With
+          %a{:href=>"/thanks"} thanks
+          to everyone who's helped.
+
+        %p
           %span#follow_button
             <a href="https://twitter.com/stef" class="twitter-follow-button" data-button="grey" data-text-color="#FFFFFF" data-link-color="#FFFFFF" data-show-count="false">Follow @stef</a>
 

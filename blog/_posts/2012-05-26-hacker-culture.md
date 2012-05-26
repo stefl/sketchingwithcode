@@ -12,7 +12,7 @@ I now self-identify as [a hacker](http://stef.io/hacks) (of the [second](http://
 
 This kind of open innovation has been seen in the cultural sector in the [open space](http://en.wikipedia.org/wiki/Open-space_meeting) event format for some time, but the crucial extension is that these events and processes result in rapid development of digital and technology-based ideas and can be used to validate a variety of ideas before one or two are developed into actual products, services or cultural works.
 
-We are now beginning to see many more cultural organisations applying these techniques not just for one off events, but looking at how to do enable more long-term projects within their organisations with "hacker in residence" programmes, open data initiatives and adopting agile/lean methodologies for digital projects.
+We are now beginning to see many more cultural organisations applying these techniques not just for one off events, but looking at how to enable more long-term projects within their organisations with "hacker in residence" programmes, open data initiatives and adopting agile/lean methodologies for digital projects.
 
 It's early days, but I can see some new thinking emerging here. If you're a cultural organisation and you're excited by hacker culture and what could be achieved through open innovation and open data what are the actions you should take in order to embrace it? What projects are leading the way in applying these principles in successful ways? What does "success" mean in the context of cultural hacking? Do hack days lead to actual tangible results, or is it more about shifting a mind-set about what is possible with digital tools?
 

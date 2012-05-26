@@ -59,7 +59,7 @@ body {
       }
     }
   }
-  #follow_button {
+  .twitter-follow-button {
     position: relative;
     top: 6px;
   }
@@ -134,4 +134,27 @@ p {
     @include leader;  
   }
   @include trailer;
+}
+
+ul.twitter_users {
+  @include clearfix();
+  li {
+    @include span-columns(10,10); 
+    @include omega();
+    h3 {
+      @include trailer(1);
+    }
+    @include at-breakpoint(60em 10) { 
+      .avatar {
+        @include span-columns(1,10); 
+      }
+      .about {
+        @include span-columns(5,10); 
+      }
+      .follow {
+        @include span-columns(3,10); 
+      }
+    }
+    @include trailer(1);
+  }
 }
