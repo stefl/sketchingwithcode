@@ -98,6 +98,11 @@ article {
   h1 {
     @include trailer(1);
   }
+  h2.comments {
+    text-align: center;
+    @include leader(1);
+    @include trailer(1);
+  }
 }
 
 p {

@@ -197,12 +197,18 @@ article {
 article h1 {
   margin-bottom: 1.5em;
 }
+/* line 101, ../../app/stylesheets/application.scss */
+article h2.comments {
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
 
-/* line 103, ../../app/stylesheets/application.scss */
+/* line 108, ../../app/stylesheets/application.scss */
 p {
   margin-bottom: 1.5em;
 }
-/* line 104, ../../app/stylesheets/application.scss */
+/* line 109, ../../app/stylesheets/application.scss */
 p:first-child {
   margin-top: 1.5em;
 }
