@@ -21,7 +21,7 @@
     %meta{:name=>"apple-mobile-web-app-status-bar-style", :content=>"black"}/
     %link{:href => "/stylesheets/application.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}/
     
-    = favicon_tag 'favicon.ico'
+    = favicon_tag '/favicon.ico'
     %script{:src=>"/assets/modernizr-2.0.6.min.js",:type=>"text/javascript"}
   
     <script type="text/javascript" src="http://use.typekit.com/sla1ora.js"></script>
@@ -39,11 +39,21 @@
         %h2
           Culture, hack days and what happens next…
       %nav  
+        %p
+          By 
+          %a{:href=>"http://stef.io"} Stef
+          with some support from 
+          %a{:href=>"http://cloreleadership.org"} Clore
+          and 
+          %a{:href=>"http://nesta.org.uk"} Nesta
         %div#follow_button
           <a href="https://twitter.com/stef" class="twitter-follow-button" data-button="grey" data-text-color="#FFFFFF" data-link-color="#FFFFFF" data-show-count="false">Follow @stef</a>
 
       %section.content
         = yield
+      %footer
+        
+          
         
   %script{:src=>"/assets/libraries.js", :type=>"text/javascript"}
   = yield_content :scripts

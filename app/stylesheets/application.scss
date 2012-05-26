@@ -18,21 +18,22 @@ $media-layout: 30em 12 60em;// Use 12 cols between min 30em & max 60em.
 $media-layout: 60em 12 30em;// Same. Larger length will always be max-width.
 $media-layout: 12 lt-ie9;  // Output is included under `.lt-ie9` class,
 $container-style: magic;
-
-$link-color:   #686945;
+$background-color: #f8faf4;
+$link-color:   #8a4945;
 
 @import "susy";
 
 @include establish-baseline;
 
 body {
-  background-color: #f8faf4;
+  background-color: $background-color;
   a {
     @include link-colors($link-color, lighten($link-color,10), lighten($link-color,15), lighten($link-color,20), lighten($link-color,25));
   }
   h1 a {
     text-decoration: none;
   }
+  color: desaturate(darken($background-color,75),10);
 }
 
 .page { 
@@ -41,10 +42,16 @@ body {
   @include container; 
 
   // header and footer are full-width by default.
-  header, footer { 
+  header{ 
     clear: both; 
-    background-color: rgba(255,255,255,0.7);
-    @include box-shadow(rgba(0,0,0,0.05) 0px 0px 8px);
+  }
+
+  footer {
+    clear: both;
+    text-align: center;
+    @include span-columns(12,12);
+    @include leader(1);
+    @include trailer(1);
   }
 
   // nav spans 3 columns of total 12.
@@ -57,8 +64,8 @@ body {
 }
 
 h1 {
-  @include adjust-font-size-to($base-font-size * 6, $lines:4);
-  font-family: "learning-curve-dashed", cursive;
+  @include adjust-font-size-to($base-font-size * 3, $lines:2);
+  font-family: "ff-tisa-web-pro",serif;
 }
 
 header {
@@ -66,17 +73,31 @@ header {
     &#logo {
       @include adjust-font-size-to($base-font-size * 8, $lines:4);
       text-align: center;
+      font-family: "learning-curve-dashed", cursive;
     }
   }
   h2 {
     @include adjust-font-size-to($base-font-size * 1.33, $lines:2);
     text-weight: light;
     text-align: center;
+    color: darken($background-color,40);
   }
   @include padding-leader(1);
   @include padding-trailer(1);
   @include leader(1);
   @include trailer(1);
+}
+
+article {
+  background-color: rgba(255,255,255,0.7);
+  @include box-shadow(rgba(0,0,0,0.05) 0px 0px 8px);
+  @include padding-leader(1);
+  @include padding-trailer(1);
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  h1 {
+    @include trailer(1);
+  }
 }
 
 p {

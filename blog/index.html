@@ -3,14 +3,14 @@ layout: default
 title: Sketching with Code
 ---
 
-<div class="posts">
+<section class="posts">
 {% for post in paginator.posts %}
   <article class="post">
     <h1><a href="{{post.url }}">{{ post.title }}</a></h1>
     {{ post.content }}
   </article>
 {% endfor %}
-</div >
+</section >
 
 <nav id="pagination">
   {% if paginator.previous_page %}
