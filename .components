@@ -1,5 +1,5 @@
 ---
-:orm: mongoid
+:orm: none
 :test: none
 :mock: none
 :script: none
