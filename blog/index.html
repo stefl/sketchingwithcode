@@ -6,7 +6,9 @@ title: Sketching with Code
 <section class="posts">
 {% for post in paginator.posts %}
   <article class="post">
-    <h1><a href="{{post.url }}">{{ post.title }}</a></h1>
+    <header>
+      <h1><a href="{{post.url }}">{{ post.title }}</a></h1>
+    </header>
     {{ post.content }}
     <h2 class="comments"><a href="{{post.url }}#comments">Comments</a>
   </article>

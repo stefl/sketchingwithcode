@@ -190,13 +190,13 @@ h1 {
 }
 
 /* line 88, ../../app/stylesheets/application.scss */
-header {
+header#header {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   margin-top: 1.5em;
 }
 /* line 90, ../../app/stylesheets/application.scss */
-header h1#logo {
+header#header h1#logo {
   font-size: 4em;
   line-height: 0.75em;
   text-align: center;
@@ -205,13 +205,13 @@ header h1#logo {
 }
 @media (min-width: 60em) {
   /* line 90, ../../app/stylesheets/application.scss */
-  header h1#logo {
+  header#header h1#logo {
     font-size: 8em;
     line-height: 0.75em;
   }
 }
 /* line 100, ../../app/stylesheets/application.scss */
-header h2 {
+header#header h2 {
   font-family: "ratio", sans-serif;
   font-weight: 200;
   font-size: 1em;
@@ -222,7 +222,7 @@ header h2 {
 }
 @media (min-width: 60em) {
   /* line 100, ../../app/stylesheets/application.scss */
-  header h2 {
+  header#header h2 {
     font-size: 1.33em;
     line-height: 3.383em;
   }
@@ -247,35 +247,35 @@ article {
   }
 }
 /* line 127, ../../app/stylesheets/application.scss */
-article h1 {
+article header {
   margin-bottom: 1.5em;
 }
-/* line 129, ../../app/stylesheets/application.scss */
+/* line 131, ../../app/stylesheets/application.scss */
 article h1 a, article h1 a:visited {
   color: #86a44b;
 }
-/* line 133, ../../app/stylesheets/application.scss */
+/* line 135, ../../app/stylesheets/application.scss */
 article h2.comments {
   text-align: center;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
 
-/* line 140, ../../app/stylesheets/application.scss */
+/* line 142, ../../app/stylesheets/application.scss */
 p {
   margin-bottom: 1.5em;
 }
-/* line 141, ../../app/stylesheets/application.scss */
+/* line 143, ../../app/stylesheets/application.scss */
 p:first-child {
   margin-top: 1.5em;
 }
 
-/* line 147, ../../app/stylesheets/application.scss */
+/* line 149, ../../app/stylesheets/application.scss */
 ul.twitter_users {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 149, ../../app/stylesheets/application.scss */
+/* line 151, ../../app/stylesheets/application.scss */
 ul.twitter_users li {
   width: 100%;
   float: left;
@@ -287,26 +287,26 @@ ul.twitter_users li {
   display: inline;
   margin-bottom: 1.5em;
 }
-/* line 152, ../../app/stylesheets/application.scss */
+/* line 154, ../../app/stylesheets/application.scss */
 ul.twitter_users li h3 {
   margin-bottom: 1.5em;
 }
 @media (min-width: 60em) {
-  /* line 156, ../../app/stylesheets/application.scss */
+  /* line 158, ../../app/stylesheets/application.scss */
   ul.twitter_users li .avatar {
     width: 8.163%;
     float: left;
     margin-right: 2.041%;
     display: inline;
   }
-  /* line 159, ../../app/stylesheets/application.scss */
+  /* line 161, ../../app/stylesheets/application.scss */
   ul.twitter_users li .about {
     width: 48.98%;
     float: left;
     margin-right: 2.041%;
     display: inline;
   }
-  /* line 162, ../../app/stylesheets/application.scss */
+  /* line 164, ../../app/stylesheets/application.scss */
   ul.twitter_users li .follow {
     width: 28.571%;
     float: left;
@@ -315,7 +315,7 @@ ul.twitter_users li h3 {
   }
 }
 
-/* line 170, ../../app/stylesheets/application.scss */
+/* line 172, ../../app/stylesheets/application.scss */
 img.full-width {
   width: 100%;
 }

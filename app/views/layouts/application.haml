@@ -33,7 +33,7 @@
 
   %body{:id=>(request.path.split("/")[1] rescue "")}
     .page
-      %header            
+      %header#header          
         %h1#logo
           %a{:title=>"Sketching with code", :href=>"/"} Sketching with Code
         %h2
