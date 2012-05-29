@@ -31,7 +31,7 @@ I like to think of the early days on a project as a sequence of hack days. The i
 
 Children learn through play, and I'd argue that so can adults (in the right conditions). I often think about what I'm doing when I'm hacking on a little idea as play. I'll look at a problem, have some conversations, and often be joking around about what we should do to solve the problem. I've been often surprised that something that starts out with an element of humour tends to lead to very interesting results. 
 
-In hack day parlance that's a "comedy hack", and at [Rewired State](http://rewiredstate.org.uk) hack day events you often see that the hacks using a bit of technology with a core idea of something humourous are often the best.
+In hack day parlance that's a "comedy hack", and at [Rewired State](http://rewiredstate.org) hack day events you often see that the hacks using a bit of technology with a core idea of something humourous are often the best.
 
 It's this playfulness I try to channel at the very early stages of a project. No, I'm not going to write any tests, or follow Test Driven Development, because what I'm doing is sketching out ideas very quickly (hence "Sketching with Code"), playing with stuff on a screen, and getting something that partially works in front of the other folks on the team to play with, maybe run it past a few "users", but in the main it's just to see what the solution might look like. 
 
