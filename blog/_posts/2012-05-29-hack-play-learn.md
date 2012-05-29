@@ -7,11 +7,11 @@ published: true
 
 Build, Measure, Learn. It's the new mantra adopted by many a tech startup thanks to Eric Ries's influential [The Lean Startup](http://theleanstartup.com).
 
-I've spent a good deal of time over the last few years involved in more than one startup. In many ways I'm very grateful for this simple, shorthand phrase to describe the process of taking an idea, seeing if it works, iterating and building a product in an agile way. It's a useful encapsulation of a lot of the processes you go through in a (in my case media/web/software) startup, where code is relatively easy to create, but it's hard to know what the right code to write might be.
+I've spent a good deal of time over the last few years involved in (more than one) startup. In many ways I'm very grateful for this simple, shorthand phrase to describe the process of taking an idea, seeing if it works, iterating and building a product in an agile way. It's a useful encapsulation of a lot of the processes you go through in a (in my case media/web/software) startup, where code is relatively easy to create, but it's hard to know what the right code to write might be.
 
 The essential process is that given some kind of user problem, you propose a hypothesis or a number of hypotheses around what might be a solution. Then you build as minimal an intervention as possible to test it - it might be a little web app, or making a video to express the idea, or a landing page to see if people might like a product even though it doesn't exist. Then you measure the success of the intervention, and from that measurement you learn about what's working and what isn't. Then you iterate - build, measure, learn, and repeat.
 
-It's a strong idea, and I know a fair few companies who are using this to build digital products - in fact it's almost becoming a dogmatic thing. "What are our learnings?", despite the grammatical crime, is becoming something of a catch-phrase.
+It's a strong idea, and I know a fair few companies who are using this to build digital products - in fact it's almost becoming a dogmatic thing. "What are our learnings?", despite the wince-inducing word-crime, is becoming something of a catch-phrase.
 
 However, looking at the way that I do things, I think that "Build, measure, learn" doesn't fully encompass what's going on when I'm building something.
 
@@ -27,7 +27,7 @@ It seems to me that much of the lean startup process is based on the idea of app
 
 On talking through that problem I realised that I have a phase that I use that could be usefully applied before you get to that point - "Hack, play, learn".
 
-I like to think of the early days on a project as a sequence of hack days. The idea is not that you will be able to do anything "scientific" in this phase, but rather that a period of play and experimentation occurs before you can get to the "build, measure, learn" phase. 
+I like to think of the early days on a project as a sequence of hack days. The idea is not that you will not be able to do anything "scientific" in this phase, but rather that a period of play and experimentation occurs before you can get to the "build, measure, learn" phase. 
 
 Children learn through play, and I'd argue that so can adults (in the right conditions). I often think about what I'm doing when I'm hacking on a little idea as play. I'll look at a problem, have some conversations, and often be joking around about what we should do to solve the problem. I've been often surprised that something that starts out with an element of humour tends to lead to very interesting results. 
 
