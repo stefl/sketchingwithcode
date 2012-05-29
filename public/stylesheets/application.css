@@ -314,3 +314,8 @@ ul.twitter_users li h3 {
     display: inline;
   }
 }
+
+/* line 170, ../../app/stylesheets/application.scss */
+img.full-width {
+  width: 100%;
+}
