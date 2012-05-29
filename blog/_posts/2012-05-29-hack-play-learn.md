@@ -37,7 +37,7 @@ It's this playfulness I try to channel at the very early stages of a project. No
 
 I've found that I iterate rapidly around hacking up an idea, playing around with it until I've got something to show, and then taking what I've learnt and applying it to the next iteration. And these iterations are often measured in hours, not days.
 
-The result is a joyful process with rapid results, a team that feels enthused and an accelerated project. But also, I think it means you get to learn a lot right at the beginning that can save a lot of time and money down the line because you're building and failing on things that just aren't right much more rapdily than if you're trying to get it in front of users and measure their responses.
+The result is a joyful process with rapid results, a team that feels enthused and an accelerated project. But also, I think it means you get to learn a lot right at the beginning that can save a lot of time and money down the line because you're building and failing on things that just aren't right much more rapidly than if you're trying to get something acceptable in front of users and measure their responses.
 
 The "hack, play, learn" phase is often short-lived, and I use it to evaluate project direction. Then, once you've settled on what you're supposed to be doing in the next phase (with a long user journey on post-it-notes on the wall, perhaps), it's time to segue over to "build, measure, learn", throw away that hacky code and build it right.
 
