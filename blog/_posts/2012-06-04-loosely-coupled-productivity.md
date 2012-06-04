@@ -31,7 +31,7 @@ Because hackdays are seen as very collaborative things, it's hard to push back s
 
 But that's not to say that I didn't have help. I had conversations. I asked opinions. I sat with some other folk and chatted about stuff, and made sure I moved around a lot.
 
-A third example - [Mixilist](http://mixilist.com) - this was a hack I did with Emily at a [Rewired State](http://rewiredstate.org.uk) event. We also had a loosely-coupled approach. I was "building" it, but we were having conversations together, making decisions, thinking about what it should be and why, and Emily was able to produce a brand, graphics and so on, and we had a very light way of working together - she passed me a USB stick or sent an email occasionally!
+A third example - [Mixilist](http://mixilist.com) - this was a hack I did with [Emily](http://twitter.com/Yummity) at a [Rewired State](http://rewiredstate.org.uk) event. We also had a loosely-coupled approach. I was "building" it, but we were having conversations together, making decisions, thinking about what it should be and why, and Emily was able to produce a brand, graphics and so on, and we had a very light way of working together - she passed me a USB stick or sent an email occasionally!
 
 So for hackdays and culture-hacks, I'm interested in these things - for many of us is it about the collaboration, the large team approach to working on a problem? Do we get "better" or "more polished" results on hack projects if we keep our teams small (like Mixilist), solo (like Chircle) and/or is there something to be said for having loosely-coupled teams (like my current day-project)?
 
