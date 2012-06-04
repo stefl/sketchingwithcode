@@ -15,7 +15,7 @@ Here's the thread:
 <blockquote class="twitter-tweet" data-in-reply-to="209589793997332480"><p>@<a href="https://twitter.com/benosteen">benosteen</a> @<a href="https://twitter.com/stef">stef</a> @<a href="https://twitter.com/docky">docky</a> once i got over the guilt, I realised I'm so clearly hugely more productive alone or with a partner.</p>&mdash; L Johnston (@FinalBullet) <a href="https://twitter.com/FinalBullet/status/209592047978553344" data-datetime="2012-06-04T10:26:52+00:00">June 4, 2012</a></blockquote>
 <blockquote class="twitter-tweet" data-in-reply-to="209592047978553344"><p>@<a href="https://twitter.com/FinalBullet">FinalBullet</a> @<a href="https://twitter.com/benosteen">benosteen</a> @<a href="https://twitter.com/stef">stef</a> Absolutely! Best collabs have been a programmer designer lead, assistant artist, and auxiliary sound person.</p>&mdash; Hayden Scott-Baron (@docky) <a href="https://twitter.com/docky/status/209596777664487424" data-datetime="2012-06-04T10:45:40+00:00">June 4, 2012</a></blockquote>
 
-I'm currently working on a project that's a web-app, and API and a (currently iOS only) mobile app. There are lots of moving parts because it's a tool for people to capture, upload, transcode and share short sports videos from their phone. 
+I'm currently working on a project that's a web-app, an API and a (currently iOS only) mobile app. There are lots of moving parts because it's a tool for people to capture, upload, transcode and share short sports videos from their phone. 
 
 Interestingly, because we've got such a strong team of people we've each got trust in the others' abilities to do good work, so my approach for making sure we're productive is to make sure there's a "loosely-coupled" approach not just to the software but to wherever we each overlap. 
 
@@ -31,7 +31,7 @@ Because hackdays are seen as very collaborative things, it's hard to push back s
 
 But that's not to say that I didn't have help. I had conversations. I asked opinions. I sat with some other folk and chatted about stuff, and made sure I moved around a lot.
 
-A third example - http://mixilist.com - this was a hack I did with Emily at a [Rewired State](http://rewiredstate.org.uk) event. We also had a loosely-coupled approach. I was "building" it, but we were having conversations together, making decisions, thinking about what it should be and why, and Emily was able to produce a brand, graphics and so on, and we had a very light way of working together - she passed me a USB stick or sent an email occasionally!
+A third example - [Mixilist](http://mixilist.com) - this was a hack I did with Emily at a [Rewired State](http://rewiredstate.org.uk) event. We also had a loosely-coupled approach. I was "building" it, but we were having conversations together, making decisions, thinking about what it should be and why, and Emily was able to produce a brand, graphics and so on, and we had a very light way of working together - she passed me a USB stick or sent an email occasionally!
 
 So for hackdays and culture-hacks, I'm interested in these things - for many of us is it about the collaboration, the large team approach to working on a problem? Do we get "better" or "more polished" results on hack projects if we keep our teams small (like Mixilist), solo (like Chircle) and/or is there something to be said for having loosely-coupled teams (like my current day-project)?
 
