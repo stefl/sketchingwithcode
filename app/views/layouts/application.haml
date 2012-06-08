@@ -61,14 +61,12 @@
       
       %footer
         
-          
-        
   = yield_content :scripts
   %script{:src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8", :type=>"text/javascript"}
-  - if false && Padrino.env == :production  
+  - if Padrino.env == :production  
     :javascript
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-666119-5']);
+      _gaq.push(['_setAccount', 'UA-32493853-1']);
       _gaq.push(['_setDomainName', 'none']);
       _gaq.push(['_setAllowLinker', true]);
       _gaq.push(['_trackPageview']);
