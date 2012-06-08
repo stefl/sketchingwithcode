@@ -13,10 +13,13 @@
       - @members.users.each do |user|
         %li
           .avatar
-            %img{:src=>user.profile_image_url}
+            %a{:href=>"http://twitter.com/#{user.screen_name}"}
+              %img{:src=>user.profile_image_url}
           .about
             %h3
               %a{:href=>user.url}= user.name.humanize
+              = surround("(",")") do
+                %a{:href=>"http://twitter.com/#{user.screen_name}"}= "@#{user.screen_name}"
             = simple_format user.description
           .follow
             %a{:href=>"https://twitter.com/#{user.screen_name}", :class=>"twitter-follow-button", :"data-button" => "grey", :"data-text-color" => "#FFFFFF", :"data-link-color"=>"#FFFFFF", "data-show-count" =>"false"}= "Follow @#{user.screen_name}"
