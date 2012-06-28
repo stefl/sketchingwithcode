@@ -131,6 +131,15 @@ article {
     a, a:visited {
       color: darken($background-color,50);
     }
+    &.draft {
+      color: #aaa;
+    }
+  }
+  h2 {
+    font-family: "ratio", sans-serif;
+    @include adjust-font-size-to($base-font-size * 1.5, $lines:2);
+    @include leader(1);
+    @include trailer(1);
   }
   h2.comments {
     text-align: center;
