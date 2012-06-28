@@ -38,6 +38,6 @@ Taking the example of [Hack the City](http://sciencegallery.com/hackthecity), I 
 
 With "hacks that get backed" (and I've worked on a few!) we're moving from the realm of "little demonstrator" to "something that people actually use". And here the message is subtly different. This is that "working in a hacky way we can make valuable things", "hacks aren't just throw-away things", "through rapid experimentation we can take an idea to a product", and so on.
 
-Message received? I suspect that'll be my next post.
+Message received? I suspect that'll be a future post.
 
 *Disclosure* I've worked with [Caper](http://wearecaper.com), who started Culture Hack Day, on a paid basis in the past, although we're not working on anything together at the moment. I'm building a mashup site for [Peter Gregson](http://petergregson.co.uk).
