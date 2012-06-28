@@ -26,7 +26,7 @@ It's quite artificial to divide up hacks into categories in this way, and I don'
 
 It's "the hack as the message". 
 
-Often, it's not the actual hack that's important - to the person making it and the organisation/person/city whose data/service/object is being hacked, it's the fact that the hack is a message to others about what is possible.
+I'm interested in the idea that it's not the actual hack that's important - to the person making it and the organisation/person/city whose data/service/object is being hacked, it's the fact that the hack is a message to others about what is possible.
 
 Hackers are flexing creative muscles and in so doing sending a message about their availability for that kind of work (so it's partly a promotion thing), but also they're sending a message to other cultural and creative organisations about what could, or should, be done - with their data, with their assets, with the kinds of things they do, and in collaboration with people who have experience of making things in this way.
 
