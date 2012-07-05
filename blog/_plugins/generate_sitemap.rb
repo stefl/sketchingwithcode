@@ -79,7 +79,6 @@ module Jekyll
     def generate_content(site)
       result   = ''
       
-      puts site.pages.inspect
       # First, try to find any stand-alone pages.   
       # Broken   
       # site.pages.each{ |page|
@@ -120,17 +119,18 @@ module Jekyll
       # Next, find all the posts.
       posts = site.site_payload['site']['posts']
       for post in posts do
-        if post.data.has_key?('changefreq')
-          changefreq = post.data["changefreq"]
-        else
-          changefreq = "never"
+        if(!post.data.has_key?('draft') || (post.data.has_key?('draft') && post.data.has_key?('draft') == false ))
+          if post.data.has_key?('changefreq')
+            changefreq = post.data["changefreq"]
+          else
+            changefreq = "never"
+          end
+          url = post.url
+          url = url[0..-11] if url=~/\/index.html$/
+          result += entry(url, post.date, changefreq, site)
         end
-        url = post.url
-        url = url[0..-11] if url=~/\/index.html$/
-        result += entry(url, post.date, changefreq, site)
       end
-      
-        result
+      result
     end
 
     # Returns the XML footer.

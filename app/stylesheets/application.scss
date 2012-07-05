@@ -36,6 +36,22 @@ body {
   color: desaturate(darken($background-color,75),10);
 }
 
+.sixteen-nine {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  @include trailer(1);
+}
+
+iframe#youtube, iframe#vimeo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .page { 
   font-family: "ff-tisa-web-pro",serif;
   @include container; 
