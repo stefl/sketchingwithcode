@@ -108,12 +108,15 @@ body h1 a {
 .sixteen-nine {
   position: relative;
   padding-bottom: 56.25%;
-  padding-top: 25px;
   height: 0;
   width: 100%;
   margin-bottom: 1.5em;
 }
-/* line 46, ../../app/stylesheets/application.scss */
+/* line 45, ../../app/stylesheets/application.scss */
+.sixteen-nine.youtube {
+  padding-top: 25px;
+}
+/* line 48, ../../app/stylesheets/application.scss */
 .sixteen-nine iframe {
   position: absolute;
   top: 0;
@@ -122,7 +125,7 @@ body h1 a {
   height: 100%;
 }
 
-/* line 56, ../../app/stylesheets/application.scss */
+/* line 58, ../../app/stylesheets/application.scss */
 .page {
   font-family: "ff-tisa-web-pro",serif;
   *zoom: 1;
@@ -139,11 +142,11 @@ body h1 a {
   display: table;
   clear: both;
 }
-/* line 60, ../../app/stylesheets/application.scss */
+/* line 62, ../../app/stylesheets/application.scss */
 .page header {
   clear: both;
 }
-/* line 64, ../../app/stylesheets/application.scss */
+/* line 66, ../../app/stylesheets/application.scss */
 .page footer {
   clear: both;
   text-align: center;
@@ -155,23 +158,23 @@ body h1 a {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-/* line 72, ../../app/stylesheets/application.scss */
+/* line 74, ../../app/stylesheets/application.scss */
 .page nav p {
   text-align: center;
 }
 @media (min-width: 60em) {
-  /* line 72, ../../app/stylesheets/application.scss */
+  /* line 74, ../../app/stylesheets/application.scss */
   .page nav p {
     text-align: left;
   }
 }
-/* line 79, ../../app/stylesheets/application.scss */
+/* line 81, ../../app/stylesheets/application.scss */
 .page .twitter-follow-button {
   position: relative;
   top: 6px;
 }
 @media (min-width: 60em) {
-  /* line 85, ../../app/stylesheets/application.scss */
+  /* line 87, ../../app/stylesheets/application.scss */
   .page nav {
     width: 15.254%;
     float: left;
@@ -182,7 +185,7 @@ body h1 a {
     #margin-left: -1em;
     display: inline;
   }
-  /* line 89, ../../app/stylesheets/application.scss */
+  /* line 91, ../../app/stylesheets/application.scss */
   .page .content {
     padding-left: 16.949%;
     width: 66.102%;
@@ -192,7 +195,7 @@ body h1 a {
   }
 }
 
-/* line 96, ../../app/stylesheets/application.scss */
+/* line 98, ../../app/stylesheets/application.scss */
 h1 {
   font-size: 2em;
   line-height: 1.5em;
@@ -200,20 +203,20 @@ h1 {
   font-weight: 100;
 }
 @media (min-width: 60em) {
-  /* line 96, ../../app/stylesheets/application.scss */
+  /* line 98, ../../app/stylesheets/application.scss */
   h1 {
     font-size: 3em;
     line-height: 1em;
   }
 }
 
-/* line 105, ../../app/stylesheets/application.scss */
+/* line 107, ../../app/stylesheets/application.scss */
 header#header {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   margin-top: 1.5em;
 }
-/* line 107, ../../app/stylesheets/application.scss */
+/* line 109, ../../app/stylesheets/application.scss */
 header#header h1#logo {
   font-size: 4em;
   line-height: 0.75em;
@@ -222,13 +225,13 @@ header#header h1#logo {
   font-weight: normal;
 }
 @media (min-width: 60em) {
-  /* line 107, ../../app/stylesheets/application.scss */
+  /* line 109, ../../app/stylesheets/application.scss */
   header#header h1#logo {
     font-size: 8em;
     line-height: 0.75em;
   }
 }
-/* line 117, ../../app/stylesheets/application.scss */
+/* line 119, ../../app/stylesheets/application.scss */
 header#header h2 {
   font-family: "ratio", sans-serif;
   font-weight: 200;
@@ -239,14 +242,14 @@ header#header h2 {
   color: #9fba68;
 }
 @media (min-width: 60em) {
-  /* line 117, ../../app/stylesheets/application.scss */
+  /* line 119, ../../app/stylesheets/application.scss */
   header#header h2 {
     font-size: 1.33em;
     line-height: 3.383em;
   }
 }
 
-/* line 133, ../../app/stylesheets/application.scss */
+/* line 135, ../../app/stylesheets/application.scss */
 article {
   background-color: rgba(255, 255, 255, 0.7);
   -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 8px;
@@ -258,25 +261,25 @@ article {
   padding-right: 0.5em;
 }
 @media (min-width: 60em) {
-  /* line 133, ../../app/stylesheets/application.scss */
+  /* line 135, ../../app/stylesheets/application.scss */
   article {
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
 }
-/* line 144, ../../app/stylesheets/application.scss */
+/* line 146, ../../app/stylesheets/application.scss */
 article header {
   margin-bottom: 1.5em;
 }
-/* line 148, ../../app/stylesheets/application.scss */
+/* line 150, ../../app/stylesheets/application.scss */
 article h1 a, article h1 a:visited {
   color: #86a44b;
 }
-/* line 151, ../../app/stylesheets/application.scss */
+/* line 153, ../../app/stylesheets/application.scss */
 article h1.draft {
   color: #aaa;
 }
-/* line 155, ../../app/stylesheets/application.scss */
+/* line 157, ../../app/stylesheets/application.scss */
 article h2 {
   font-family: "ratio", sans-serif;
   font-size: 1.5em;
@@ -284,28 +287,28 @@ article h2 {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-/* line 161, ../../app/stylesheets/application.scss */
+/* line 163, ../../app/stylesheets/application.scss */
 article h2.comments {
   text-align: center;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
 
-/* line 168, ../../app/stylesheets/application.scss */
+/* line 170, ../../app/stylesheets/application.scss */
 p {
   margin-bottom: 1.5em;
 }
-/* line 169, ../../app/stylesheets/application.scss */
+/* line 171, ../../app/stylesheets/application.scss */
 p:first-child {
   margin-top: 1.5em;
 }
 
-/* line 175, ../../app/stylesheets/application.scss */
+/* line 177, ../../app/stylesheets/application.scss */
 ul.twitter_users {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 177, ../../app/stylesheets/application.scss */
+/* line 179, ../../app/stylesheets/application.scss */
 ul.twitter_users li {
   width: 100%;
   float: left;
@@ -317,26 +320,26 @@ ul.twitter_users li {
   display: inline;
   margin-bottom: 1.5em;
 }
-/* line 180, ../../app/stylesheets/application.scss */
+/* line 182, ../../app/stylesheets/application.scss */
 ul.twitter_users li h3 {
   margin-bottom: 1.5em;
 }
 @media (min-width: 60em) {
-  /* line 184, ../../app/stylesheets/application.scss */
+  /* line 186, ../../app/stylesheets/application.scss */
   ul.twitter_users li .avatar {
     width: 8.163%;
     float: left;
     margin-right: 2.041%;
     display: inline;
   }
-  /* line 187, ../../app/stylesheets/application.scss */
+  /* line 189, ../../app/stylesheets/application.scss */
   ul.twitter_users li .about {
     width: 48.98%;
     float: left;
     margin-right: 2.041%;
     display: inline;
   }
-  /* line 190, ../../app/stylesheets/application.scss */
+  /* line 192, ../../app/stylesheets/application.scss */
   ul.twitter_users li .follow {
     width: 28.571%;
     float: left;
@@ -345,7 +348,7 @@ ul.twitter_users li h3 {
   }
 }
 
-/* line 198, ../../app/stylesheets/application.scss */
+/* line 200, ../../app/stylesheets/application.scss */
 img.full-width {
   width: 100%;
 }

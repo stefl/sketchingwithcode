@@ -39,10 +39,12 @@ body {
 .sixteen-nine {
   position: relative;
   padding-bottom: 56.25%;
-  padding-top: 25px;
   height: 0;
   width: 100%;
   @include trailer(1);
+  &.youtube {
+    padding-top: 25px;
+  }
   iframe {
     position: absolute;
     top: 0;
