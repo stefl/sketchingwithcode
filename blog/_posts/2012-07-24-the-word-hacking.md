@@ -15,7 +15,7 @@ I regularly find myself having to explain that if I say I'm a hacker, I don't me
 
 I think that that fear of hackers is only growing as a result of the press that Anonymous, Lulzsec and others have been getting, as well as the barrage of password security fails, virus alerts, phishing scams, and general internet nastiness that we all have to learn to navigate around daily. So it's no wonder that suggesting (the other type of) hackers and cultural folk get together to do interesting things is met with a little confusion and trepidation.
 
-If we, as hackers, are advocating playful, experimental, creative approach to working with technology, I do wonder of the term "hack" is limiting the ability to do that. So perhaps, by using "hack" as a term, we're deliberately limiting how mainstream this approach could one day be? Is the real idea that hacking should always be on the periphery and the province of the maverick, inventor, geek?
+If we, as hackers (of the hackday attendee variety), are advocating playful, experimental, creative approach to working with technology, I do wonder if the term "hack" is limiting our ability to do that. So perhaps, by using "hack" as a term, we're deliberately limiting how mainstream this approach could one day be? Is the real idea that hacking should always be on the periphery and the province of the maverick, inventor, geek?
 
 Perhaps that's why I've used the phrase "sketching with code" for this project - It might be that I wanted to talk to a wider audience than those who would feel comfortable reading about "hacking", so I omitted the word "hack" unconsciously.
 
