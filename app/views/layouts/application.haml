@@ -70,6 +70,9 @@
         %p
           = succeed(".") do
             %a{:href=>"https://github.com/stefl/sketchingwithcode"} Source code
+            to these
+            = Post.all.collect(&:word_count).sum
+            words
 
         %p
           %span#follow_button

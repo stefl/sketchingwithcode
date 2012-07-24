@@ -35,6 +35,7 @@ GEM
       diff-lcs (~> 1.1)
       mime-types (~> 1.15)
     haml (3.1.4)
+    hashie (1.2.0)
     http_router (0.10.2)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
@@ -122,6 +123,7 @@ DEPENDENCIES
   compass (= 0.12.2.rc.0)
   dalli
   haml
+  hashie
   jekyll!
   padrino (= 0.10.5)
   rake
