@@ -14,7 +14,7 @@ Here's a collection of initial thoughts about what I might do with my time, a bi
 Why am I doing this?
 --------------------
 
-I've just come out of working very hard for three years on [a web video startup](http://aframe.com) (I didn't design this btw). For the uninitiated, have a read of the [#startuplife](http://twitter.com/search?q=startuplife) hashtag on twitter. Long hours, too much coffee, lots of ups and downs, but a singular focus on doing one thing really well and getting a successful business of the ground. We did just that, raised a good amount of investment, and it was time for me to change modes.
+I've just come out of working very hard for three years on [a web video startup](http://aframe.com) (I didn't design the sales site btw). For the uninitiated, have a read of the [#startuplife](http://twitter.com/search?q=startuplife) hashtag on twitter. Long hours, too much coffee, lots of ups and downs, but a singular focus on doing one thing really well and getting a successful business off the ground. We did just that, raised a good amount of investment, and it was time for me to change modes.
 
 My new thing is "playfully hacking on things that matter", and I'm spending my time throwing the net wide, doing a variety of interesting projects with a variety of interesting people. 
 
