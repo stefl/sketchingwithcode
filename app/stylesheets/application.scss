@@ -66,6 +66,10 @@ body {
   }
   nav {
     p {
+      font-family: "ratio", sans-serif;
+      font-weight: normal;
+      @include adjust-font-size-to($base-font-size * 0.875, $lines:1);
+      color: #555;
       text-align: center;
       @include at-breakpoint(60em 14) { 
         text-align: left;

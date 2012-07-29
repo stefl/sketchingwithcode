@@ -55,21 +55,23 @@
         = yield
       %nav  
         %p
-          Attempting to answer the question 
+          This is part of a research project by me, 
+          = succeed(",") do
+            %a{:href=>"http://stef.io"} Stef
+          in which I am looking at
           %a{:href=>"/2012/05/26/hacker-culture"} how and what are cultural organisations learning from hacker culture?
         %p
-          This is a research project by me, 
-          %a{:href=>"http://stef.io"} Stef
-          through whom I'm 
+          For the next few months I am
           %a{:href=>"http://www.welcometosync.com/geeks/"} Geek in Residence
           on the Scottish island of Eigg at an early-stage center for arts and creativity 
           %a{:href=>"http://eiggbox.com"} Eigg Box
-          until the end of 2012 and I'm documenting that experience here.
+          until the end of 2012 and I'll be documenting that experience here.
           
         %p
           With
-          %a{:href=>"/thanks"} thanks
-          to everyone who's helped, including financial support from
+          = succeed(",") do
+            %a{:href=>"/thanks"} thanks to everyone who's helped
+          including financial support from
           = succeed(",") do
             %a{:href=>"http://cloreleadership.org"} Clore
           = succeed(",") do
