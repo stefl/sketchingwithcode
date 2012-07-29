@@ -4,19 +4,13 @@
 @import "compass/typography/vertical_rhythm";
 @import "compass/utilities/links/link-colors";
 
-$total-columns  : 12;             // a 12-column grid
+$total-columns  : 14;             // a 12-column grid
 $column-width   : 4em;            // each column is 4em wide
 $gutter-width   : 1em;            // 1em gutters between columns
 $grid-padding   : $gutter-width;  // grid-padding equal to gutters
 
-$media-layout: 12;          // Use 12-col layout at matching min-width.
-$media-layout: 30em;        // At min 30em, use closest fitting layout.
-$media-layout: 30em 12;     // At min 30em, use 12-col layout.
-$media-layout: 12 60em;     // Use 12 cols up to max 60em.
-$media-layout: 30em 60em;   // Between min 30em & max 60em, use closest layout.
-$media-layout: 30em 12 60em;// Use 12 cols between min 30em & max 60em.
-$media-layout: 60em 12 30em;// Same. Larger length will always be max-width.
-$media-layout: 12 lt-ie9;  // Output is included under `.lt-ie9` class,
+$media-layout: 14;          // Use 12-col layout at matching min-width.
+
 $container-style: magic;
 $background-color: #f8faf4;
 $link-color:   #8a4945;
@@ -73,7 +67,7 @@ body {
   nav {
     p {
       text-align: center;
-      @include at-breakpoint(60em 12) { 
+      @include at-breakpoint(60em 14) { 
         text-align: left;
       }
     }
@@ -83,14 +77,14 @@ body {
     top: 6px;
   }
   
-  @include at-breakpoint(60em 12) { 
+  @include at-breakpoint(60em 14) { 
     nav { 
-      @include span-columns(2,12); 
+      @include span-columns(3,14); 
       @include omega();
     }
     .content { 
-      @include prefix(2);
-      @include span-columns(8,12);
+      @include prefix(3);
+      @include span-columns(8,14);
     }
   }
 }
@@ -99,7 +93,7 @@ h1 {
   @include adjust-font-size-to($base-font-size * 2, $lines:2);
   font-family: "ratio", sans-serif;
   font-weight: 100;
-  @include at-breakpoint(60em 12) { 
+  @include at-breakpoint(60em 14) { 
     @include adjust-font-size-to($base-font-size * 3, $lines:2);
   }
 }
@@ -111,7 +105,7 @@ header#header {
       text-align: center;
       font-family: "learning-curve-dashed", cursive;
       font-weight: normal;
-      @include at-breakpoint(60em 12) { 
+      @include at-breakpoint(60em 14) { 
         @include adjust-font-size-to($base-font-size * 8, $lines:4);
       }
     }
@@ -123,7 +117,7 @@ header#header {
     text-weight: light;
     text-align: center;
     color: darken($background-color,40);
-    @include at-breakpoint(60em 12) { 
+    @include at-breakpoint(60em 14) { 
       @include adjust-font-size-to($base-font-size * 1.33, $lines:3);
     }
   }
@@ -139,7 +133,7 @@ article {
   @include padding-trailer(1);
   padding-left: 0.5em;
   padding-right: 0.5em;
-  @include at-breakpoint(60em 12) { 
+  @include at-breakpoint(60em 14) { 
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
@@ -185,15 +179,15 @@ ul.twitter_users {
     h3 {
       @include trailer(1);
     }
-    @include at-breakpoint(60em 10) { 
+    @include at-breakpoint(60em 14) { 
       .avatar {
-        @include span-columns(1,10); 
+        @include span-columns(1,14); 
       }
       .about {
-        @include span-columns(5,10); 
+        @include span-columns(5,14); 
       }
       .follow {
-        @include span-columns(3,10); 
+        @include span-columns(3,14); 
       }
     }
     @include trailer(1);

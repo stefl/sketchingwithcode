@@ -55,17 +55,28 @@
         = yield
       %nav  
         %p
-          By 
+          Attempting to answer the question 
+          %a{:href=>"/2012/05/26/hacker-culture"} how and what are cultural organisations learning from hacker culture?
+        %p
+          This is a research project by me, 
           %a{:href=>"http://stef.io"} Stef
-          with some support from 
-          %a{:href=>"http://cloreleadership.org"} Clore
-          and 
-          = succeed(".") do
-            %a{:href=>"http://nesta.org.uk"} Nesta
+          through whom I'm 
+          %a{:href=>"http://www.welcometosync.com/geeks/"} Geek in Residence
+          on the Scottish island of Eigg at an early-stage center for arts and creativity 
+          %a{:href=>"http://eiggbox.com"} Eigg Box
+          until the end of 2012 and I'm documenting that experience here.
+          
         %p
           With
           %a{:href=>"/thanks"} thanks
-          to everyone who's helped.
+          to everyone who's helped, including financial support from
+          = succeed(",") do
+            %a{:href=>"http://cloreleadership.org"} Clore
+          = succeed(",") do
+            %a{:href=>"http://nesta.org.uk"} NESTA
+          and
+          = succeed(",") do
+            %a{:href=>"http://www.welcometosync.com"} Sync
 
         %p
           = succeed(".") do
