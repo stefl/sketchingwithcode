@@ -16,13 +16,13 @@ Why am I doing this?
 
 I've just come out of working very hard for three years on [a web video startup](http://aframe.com) (I didn't design the sales site btw). For the uninitiated, have a read of the [#startuplife](http://twitter.com/search?q=startuplife) hashtag on twitter. Long hours, too much coffee, lots of ups and downs, but a singular focus on doing one thing really well and getting a successful business off the ground. We did just that, raised a good amount of investment, and it was time for me to change modes.
 
-My new thing is "playfully hacking on things that matter", and I'm spending my time throwing the net wide, doing a variety of interesting projects with a variety of interesting people. 
+My new thing is "playfully hacking on things that matter", and I'm spending my time throwing the net wide, doing a variety of interesting projects with a variety of interesting people. Here's a bit about what that means...
+
+"Playful", as in not really worrying too much about the end results of making something being something that could turn into a business, or having some idea of an immediate return on investment. I like to approach things with a bit of humour, lightness and just the beginnings of an idea on what could happen, then let conversations and play determine ther result.
 
 "Hacking", as in the positive use of the word, not doing illegal things, has been getting a bit of attention recently as a way of rapidly experimenting with solutions to problems, or to learn about something in a "take it apart and put it back together again" way. 
 
 I've spent the last few years getting good at making digital things really quickly. You'll often find me at "hack days", where people get together to make interesting little experiments over a short period of time, often around 36 hours. I'm researching this stuff at [Sketching with Code](http://sketchingwithcode.com) and you can see [some of the things I've hacked together in the past](http://stef.io/hacks).
-
-"Playful", as in not really worrying too much about the end results of making something being something that could turn into a business, or having some idea of an immediate return on investment. I like to approach things with a bit of humour, lightness and just the beginnings of an idea on what could happen, then let conversations and play determine ther result.
 
 And "things that matter", as in projects that have some kind of output other than just "make lots of money", or "solve a first world problem for people with iPhones". I gave a talk recently at the inagural [Find Better Problems](http://findbetterproblems.com) event, and it seems that a fair few people are getting a little tired of people working in technology focussing all their efforts on getting people to see more ads, buy virtual products for an online game or work out a way to compete with Tim Berners Lee's "Anything you can do I can do meta". 
 
