@@ -43,9 +43,9 @@ There are a few little problems that emerged during my time there. And with a li
 
 Transport can be problematic, and even finding a way to connect up the required train/plane/car/ferry connections is time consuming. Perhaps we could sketch up a wiki where people can share their journey plans, or even a journey calculator.
 
-Also, there's no cash point on the island, yet there are entrepreneurs providing services. Could we use Gocardless, Square (or the UK equivalent), perhaps some kind of hotel tab card and a way to tally up how much a visitor spends and dividing up a single payment between the various intended recipients?
+Also, there's no cash point on the island, yet there are entrepreneurs providing services. Could we use [Gocardless](http://gocardless.com), [Square](http://squareup.com) (or the UK equivalent), perhaps some kind of hotel tab card and a way to tally up how much a visitor spends and dividing up a single payment between the various intended recipients?
 
-There's one of the islanders who knows about how to build websites, but I can imagine there being a bit of a bottleneck (I know - I've been it in the past!), and I've heard a few stories about projects that went awry when working with other web people from elsewhere in the country. I suspect finding ways for people to very simply operate the web side of their businesses using really easy tools. I've found an iPad app "Simpl" (not the FutureGov project) that looks great for that kind of thing. Plus there are a couple of iPads on the island.
+There's one of the islanders who knows about how to build websites, but I can imagine there being a bit of a bottleneck (I know - I've been it in the past!), and I've heard a few stories about projects that went awry when working with other web people from elsewhere in the country. I suspect finding ways for people to very simply operate the web side of their businesses using really easy tools. I've found an iPad app [Simpl](http://itunes.apple.com/gb/app/simpl/id506609825?mt=8) (not the [FutureGov](http://wearefuturegov.com/) project) that looks great for that kind of thing. Plus there are a couple of iPads on the island.
 
 Sharing knowledge
 -----------------
@@ -61,3 +61,10 @@ Playful, fun stuff
 ------------------
 
 Of course I'll also be making some fun little things. Stuff with instagram, stuff with Flickr, little sketches of ideas, who knows. The guiding principle at the moment is to keep it wide and undefined, until such a time as one or two turn into something promising. Then I shall probably work with Lucy to decide on where to put the effort, where to focus and hopefully end up with some lasting, useful tools that help Eigg Box get to the next stage.
+
+Remoteness
+----------
+
+Finally, I put the word "remote" in the title of this post on purpose. I loved the work that [Distance Lab](http://www.distancelab.org) did a few years ago, so there may be a thing or two to do around similar themes. 
+
+I'll end by summarising Lucy's wise words on the subject - "everywhere is remote from somewhere".
