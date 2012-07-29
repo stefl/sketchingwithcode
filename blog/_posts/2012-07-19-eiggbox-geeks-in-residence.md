@@ -18,7 +18,7 @@ I've just come out of working very hard for three years on [a web video startup]
 
 My new thing is "playfully hacking on things that matter", and I'm spending my time throwing the net wide, doing a variety of interesting projects with a variety of interesting people. Here's a bit about what that means...
 
-"Playful", as in not really worrying too much about the end results of making something being something that could turn into a business, or having some idea of an immediate return on investment. I like to approach things with a bit of humour, lightness and just the beginnings of an idea on what could happen, then let conversations and play determine ther result.
+"Playful", as in not really worrying too much about the end results of making something being something that could turn into a business, or having some idea of an immediate return on investment. I like to approach things with a bit of humour, lightness and just the beginnings of an idea on what could happen, then let conversations and play determine the    result.
 
 "Hacking", as in the positive use of the word, not doing illegal things, has been getting a bit of attention recently as a way of rapidly experimenting with solutions to problems, or to learn about something in a "take it apart and put it back together again" way. 
 
