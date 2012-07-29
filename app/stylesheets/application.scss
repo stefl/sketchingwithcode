@@ -165,6 +165,9 @@ article {
     @include leader(1);
     @include trailer(1);
   }
+  img {
+    max-width: 100%;
+  }
 }
 
 p {

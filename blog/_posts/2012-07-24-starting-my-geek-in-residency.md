@@ -4,6 +4,8 @@ title: Being a hacker on a remote Scottish island
 published: true
 ---
 
+![Houses on Eigg](https://dl.dropbox.com/s/l4bcb9qha7zve37/2012-07-23%2012.38.38.jpg)
+
 Wow. Well that certainly was an experience I'll remember. I've just come back from my first trip to [Eigg](http://isleofeigg.org) and I shall seemingly be known, I hope affectionately, as "Our Geek" by the fascinating array of folk I met while I was there.
 
 For some of the next few months I will be spending time both on the island and at home working as a Geek in Residence there.
@@ -19,6 +21,8 @@ The island is fascinating and the more I heard about its history the more fascin
 Until then I'm probably going to get stuck into a hack or two, think a little more about the themes that emerged in the conversations that emerged when Suzy Glass joined us for the last couple of days.
 
 We're quite deliberately keeping all of this quite open. We've had too many good ideas that we could try to do together, and we're not yet at the point where we should be narrowing down onto single achievable pieces of work. I suspect what's needed now is in the comfort of home (I was rescuing collapsing wind-blown tents on Sunday morning!) I'll sketch up some of the following:
+
+![](https://dl.dropbox.com/s/ktdkdno2zmjdflf/2012-07-23%2012.14.29.jpg)
 
 Telling the story of Eigg
 -------------------------
@@ -52,15 +56,21 @@ Sharing knowledge
 
 And then there's just a piece of work to be done about having good conversations with folk, giving a few pointers, and swapping them for interesting and useful things that I can learn and take away.
 
+![Lucy's house](https://dl.dropbox.com/s/ed0amklmxkhi2m0/2012-07-23%2012.08.10.jpg)
+
 Making something physical
 -------------------------
 
 I'm currently really interested in 3d printing, laser cutting and short run manufacturing. One or two of the islanders and I joked about making an Eigg Coop that would be an open source, easy to replicate/print chicken coop. Could be a nice experiment!
 
+![Kicking a ball](https://dl.dropbox.com/s/66tj2e3f1s6zgn5/2012-07-21%2017.24.29.jpg)
+
 Playful, fun stuff
 ------------------
 
 Of course I'll also be making some fun little things. Stuff with instagram, stuff with Flickr, little sketches of ideas, who knows. The guiding principle at the moment is to keep it wide and undefined, until such a time as one or two turn into something promising. Then I shall probably work with Lucy to decide on where to put the effort, where to focus and hopefully end up with some lasting, useful tools that help Eigg Box get to the next stage.
+
+![Washing line on Eigg](https://dl.dropbox.com/s/ii3pkg4eb3bse29/2012-07-23%2012.33.20.jpg)
 
 Remoteness
 ----------
