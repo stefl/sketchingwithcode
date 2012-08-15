@@ -2,7 +2,7 @@
 @import "compass/typography";
 @import "compass/css3";
 @import "compass/typography/vertical_rhythm";
-@import "compass/utilities/links/link-colors";
+@import "compass/typography/links/link-colors";
 
 $total-columns  : 14;             // a 12-column grid
 $column-width   : 4em;            // each column is 4em wide
@@ -27,7 +27,7 @@ body {
   h1 a {
     text-decoration: none;
   }
-  color: desaturate(darken($background-color,75),10);
+  color: #222;
 }
 
 .sixteen-nine {
