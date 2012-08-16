@@ -1,4 +1,5 @@
 ---
+layout: post
 title: What's the point of a hack day if nothing happens after the event?
 status: published
 draft: false
@@ -12,7 +13,7 @@ Anecdotally I'd say that the vast majority of hacks produced at hack days tend t
 
 I've noticed recently, that where many hackdays and latterly hackathons started out as days for experimentation and exploration we ar seeing them being used as a way for companies to find and acquire talent, and one of the things put to potential attendees is the idea that if they're lucky, and their hack is "good enough" then they will get a chance to present their idea to a handful of influential and powerful investors/industry people, perhaps with a suggestion that their hack could get some seed funding to turn it from a hack into an investable proposition, gain some additional funds to turn it into a prototype, or just straight up get the attention of these important people and get a first/better job.
 
-I think that the is probably a strong motivator for young hackers and designers - get the "break" they've always been hoping for, and that's an admirable thing to hope to achieve for your attendees.
+I think that there is probably a strong motivator for young hackers and designers - get the "break" they've always been hoping for, and that's an admirable thing to hope to achieve for your attendees.
 
 However, putting some kind of promise of a "prize" at the core of the event, I feel, alters it and turns it away from a playful, fun, collaborative event into one that is much more serious, competitive and siloed. I know the feeling from first hand experiences, having attended non-competitive hack days versus as well as ones that have an element of competition. 
 

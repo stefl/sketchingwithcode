@@ -132,7 +132,6 @@ header#header {
 
 article {
   background-color: rgba(255,255,255,0.7);
-  @include box-shadow(rgba(0,0,0,0.05) 0px 0px 8px);
   @include padding-leader(1);
   @include padding-trailer(1);
   padding-left: 0.5em;
@@ -142,7 +141,14 @@ article {
     padding-right: 1.5em;
   }
   header {
-    @include trailer(1);
+    h1 {
+      @include trailer(0.25);
+    }
+    p {
+      @include trailer(0);
+      color: #aaa;
+      font-family: "ratio", sans-serif;
+    }
   }
   h1 {
     a, a:visited {
@@ -200,4 +206,15 @@ ul.twitter_users {
 
 img.full-width {
   width: 100%;
+}
+
+#draft_items {
+  background-color: rgba(0,0,0,0.1);
+  color: #222;
+  @include leader(1);
+  padding: 0.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  @include trailer(1);
+  font-family: "ratio", sans-serif;
 }
