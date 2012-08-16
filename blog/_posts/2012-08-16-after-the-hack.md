@@ -17,7 +17,7 @@ I think that there is probably a strong motivator for young hackers and designer
 
 However, putting some kind of promise of a "prize" at the core of the event, I feel, alters it and turns it away from a playful, fun, collaborative event into one that is much more serious, competitive and siloed. I know the feeling from first hand experiences, having attended non-competitive hack days versus as well as ones that have an element of competition. 
 
-I'm quite competitive, so even if the prize is basically my day rate for two days' work, I'd be pretty motivated to make sur win. The trouble is, that in doing so you end up closing down and not collaborate helpfully with those around you. 
+I'm quite competitive, so even if the prize is basically my day rate for two days' work, I'd be pretty motivated to make sure I 'win' (whatever that means!). The trouble is, that in doing so you end up closing down and not collaborate helpfully with those around you. 
 
 For that reason, I'm not a big fan of "big prize" hack days, where teams of people who already work together go to an event to show how wonderful they are against all the other company teams. Gone is the element of playful collaboration, learning and exploration that I find so exciting about hack days.
 
