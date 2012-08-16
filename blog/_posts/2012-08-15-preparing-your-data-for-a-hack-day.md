@@ -15,7 +15,7 @@ It's still unclear to many people who work in cultural organisations what a hack
 
 ## Opening data
 
-Katy Beale, one of the Culture Hack team, surprised me by saying that many potential attendees aren't really aware that they have "data". This might be because people think of data as some kind of abstract, complicated thing that's stored in a big database somewhere. 
+[Katy Beale](http://flavors.me/katybeale), one of the [Culture Hack](http://twitter.com/culturehack) team, surprised me by saying that many potential attendees aren't really aware that they have "data". This might be because people think of data as some kind of abstract, complicated thing that's stored in a big database somewhere. 
 
 At a pre-event workshop, they spend a fair amount of time talking about what data is, and working with the cultural organisations to think about the kinds of a information they are already keeping for reporting and transparency reasons - footfall, postcode from where a visitor travelled, box office takings, usage of parts of a building, all sorts of stuff that might otherwise be ignored. Katy described a lightbulb moment that some people experienced when they realised that information they were already recording could be turned into something else at the hack day, without too much work on their part.
 
@@ -27,11 +27,11 @@ Part of the advanced work that Culture Hack do is to work with the organisations
 
 Here's a few examples of data cleaning issues I've seen that could have prevented a hack day fail:
 
-###Supplying a massive database dump in a proprietary format
+### Supplying a massive database dump in a proprietary format
 
 For instance, your web development team give you a Microsoft SQL Server file that is several gigabytes in size, and gives you a link for where someone could access it. The problem here is that nobody has really looked at what it contains, and worse, it means that anybody who wants to see what it contains must download the massive file, have double or triple that in available space on their hard drive, also have a licence for that particular software (in the hundreds or low thousands of pounds, dependent on the format), and have the patience to do all of this too! 
 
-Aim to provide data in free formats such as TXT, CSV, JSON, or XML, and provide a small subset of the data in advance do that potential hackers can get a feel for what is in the data.
+Aim to provide data in free formats such as CSV, JSON, TXT, or XML, and provide a small subset of the data in advance do that potential hackers can get a feel for what is in the data.
 
 ### Excel documents where business logic is described as formulae
 
