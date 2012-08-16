@@ -61,7 +61,7 @@ There are a few thorny issues here, so I shall cover this some more in another p
 
 ## Planning for the hack
 
-I find it interesting that hack days have matured to the point where we are now looking at how to ensure that participants on both sides get the most from the day. What's more, I saw definite improvements in the quality of the data that came through at the let Culture Hack, and indeed that seems to be happening at other hack days too.
+I find it interesting that hack days have matured to the point where we are now looking at how to ensure that participants on both sides get the most from the day. What's more, I saw definite improvements in the quality of the data that came through at the latest Culture Hack, and indeed that seems to be happening at other hack days too.
 
 Planning for the hack, or setting things up so that good things come from a unique combination of talents is a smart idea. I'm looking forward to learning about other things that people are doing to ensure hack days go smoothly.
 
