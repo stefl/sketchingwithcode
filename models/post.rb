@@ -11,7 +11,7 @@ class Post
   before_save :calculate_word_count
 
   def calculate_word_count
-    word_count = content.to_s.scan(/(\w|-)+/).size
+    self.word_count = content.to_s.scan(/(\w|-)+/).size
   end
 
   FILENAME_FORMAT = /^(\d+-\d+-\d+)-(.*)(\.[^.]+)$/
