@@ -6,6 +6,13 @@ class Post
   field :revision
   field :body
   field :path
+  field :word_count
+
+  before_save :calculate_word_count
+
+  def calculate_word_count
+    word_count = content.to_s.scan(/(\w|-)+/).size
+  end
 
   FILENAME_FORMAT = /^(\d+-\d+-\d+)-(.*)(\.[^.]+)$/
   
@@ -91,10 +98,6 @@ class Post
 
   def content_html
     content.to_html
-  end
-
-  def word_count
-    content.to_s.scan(/(\w|-)+/).size
   end
 
   def meta

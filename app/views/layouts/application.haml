@@ -84,7 +84,7 @@
           = succeed(".") do
             %a{:href=>"https://github.com/stefl/sketchingwithcode"} Source code
             to these
-            = Post.all.collect(&:word_count).sum
+            = Post.all.sum(&:word_count) rescue 0
             words
 
         %p
