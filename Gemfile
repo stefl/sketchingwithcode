@@ -1,4 +1,5 @@
 source :rubygems
+ruby '1.9.3'
 gem 'rake'
 gem 'sinatra-flash', :require => 'sinatra/flash'
 gem 'haml'
