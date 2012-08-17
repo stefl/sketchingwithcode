@@ -67,6 +67,4 @@ test:
       database: delight_test
 
 production:
-  sessions:
-    default:
-      uri: <%= ENV['MONGOLAB_URI'] %>
+  uri: <%= ENV['MONGOLAB_URI'] %>
