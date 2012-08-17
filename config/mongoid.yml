@@ -70,4 +70,4 @@ test:
       database: delight_test
 
 production:
-  uri: <%= ENV['MONGOHQ_URL'] %>
+  uri: <%= ENV['MONGOLAB_URL'] %>
