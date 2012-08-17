@@ -52,7 +52,7 @@ module HireFire
           if environment = HireFire.configuration.environment
             environment.to_s.camelize
           else
-            ::Rails.env.production? ? 'Heroku' : 'Noop'
+            ::Padrino.env == :production ? 'Heroku' : 'Noop'
           end
         ).new
       end
