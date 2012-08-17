@@ -69,4 +69,4 @@ test:
 production:
   sessions:
     default:
-      uri: <%= ENV['MONGOLAB_URL'] %>
+      uri: <%= ENV['MONGOLAB_URI'] %>
