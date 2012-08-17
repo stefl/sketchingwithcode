@@ -7,6 +7,16 @@ require 'rubygems' unless defined?(Gem)
 require 'bundler/setup'
 Bundler.require(:default, PADRINO_ENV)
 
+Dropbox::API::Config.app_key    = ENV["DROPBOX_APP_KEY"]
+Dropbox::API::Config.app_secret = ENV["DROPBOX_APP_SECRET"]
+Dropbox::API::Config.mode       = "sandbox"
+
+ENV["REDISTOGO_URL"] ||= "redis://localhost:6379/"
+uri = URI.parse(ENV["REDISTOGO_URL"])
+Resque.redis = Redis.new(:host => uri.host, :port => uri.port, :password => uri.password)
+
+HireFire::Initializer.initialize!
+
 Padrino.before_load do
 end
 

@@ -30,6 +30,7 @@ body {
   color: #222;
 }
 
+
 .sixteen-nine {
   position: relative;
   padding-bottom: 56.25%;
@@ -99,6 +100,12 @@ h1 {
   font-weight: 100;
   @include at-breakpoint(60em 14) { 
     @include adjust-font-size-to($base-font-size * 3, $lines:2);
+  }
+}
+
+p {
+  strong {
+    font-weight: bold;
   }
 }
 

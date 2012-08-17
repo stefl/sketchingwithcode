@@ -1,0 +1,10 @@
+- content_for :scripts do
+  %script{:src => "http://disqus.com/forums/sketchingwithcode/embed.js", :type => "text/javascript"}
+%article  
+  %header
+    %h1= @post.title
+  = @post.content_html
+  %footer#comments
+    #disqus_thread
+    %noscript
+      %a{:href => "http://sketchingwithcode.disqus.com/?url=ref"} View the discussion thread.

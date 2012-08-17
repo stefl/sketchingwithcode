@@ -1,0 +1,18 @@
+%section.posts
+  - @posts.each do |post|
+    %article.post
+      %header
+        - if post.draft
+          %h1.draft= post.title
+          %p
+            Draft
+        - else
+          %h1= link_to(post.title, post.url)
+          %p
+            = distance_of_time_in_words(Date.today, post.published_at)
+            ago
+
+
+%p#draft_items
+  %em
+    Items marked as "draft" are me making a promise that I will write about this subject, but I'm still thinking it through.
