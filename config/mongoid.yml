@@ -1,3 +1,6 @@
+require 'yaml'
+YAML::ENGINE.yamler= 'syck'
+
 development: &defaults
   # Configure available database sessions. (required)
   sessions:
@@ -66,16 +69,5 @@ test:
       <<: *default_session
       database: delight_test
 
-<% if url = (ENV['MONGOHQ_URL'] || ENV['MONGOLAB_URL']) %>
-  <% uri = URI.parse(url) %>
 production:
-  <<: *defaults
-  sessions:
-    default:
-      <<: *default_session
-      database: <%= uri.path.sub('/','') %>
-      username: <%= uri.user %>
-      password: <%= uri.password %>
-      hosts:
-        - <%= uri.host %>:<%= uri.port %>
-<% end %>
+  uri: <%= ENV['MONGOHQ_URL'] %>
