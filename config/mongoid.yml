@@ -72,4 +72,6 @@ production:
       uri: <%= ENV['MONGOLAB_URI'] %>
       options:
         skip_version_check: true
-        safe: true
+  options:
+    preload_models: true
+    raise_not_found_error: false
