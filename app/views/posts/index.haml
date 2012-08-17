@@ -1,5 +1,5 @@
 %section.posts
-  - if @posts
+  - unless @posts.blank?
     - @posts.each do |post|
       %article.post
         %header
