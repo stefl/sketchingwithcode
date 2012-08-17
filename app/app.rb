@@ -9,6 +9,10 @@ class Sketching < Padrino::Application
 
   disable :sessions
   disable :flash
+
+  configure do
+    HireFire::Initializer.initialize!
+  end
   
   before do
     headers 'Cache-Control' => 'public, max-age=300' 
