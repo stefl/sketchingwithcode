@@ -344,23 +344,24 @@ ul.twitter_users li h3 {
 @media (min-width: 60em) {
   /* line 200, ../../app/stylesheets/application.scss */
   ul.twitter_users li .avatar {
-    width: 5.797%;
+    width: 8.163%;
     float: left;
-    margin-right: 1.449%;
+    margin-right: 2.041%;
     display: inline;
   }
   /* line 203, ../../app/stylesheets/application.scss */
   ul.twitter_users li .about {
-    width: 34.783%;
+    width: 59.184%;
     float: left;
-    margin-right: 1.449%;
+    margin-right: 2.041%;
     display: inline;
   }
   /* line 206, ../../app/stylesheets/application.scss */
   ul.twitter_users li .follow {
-    width: 20.29%;
-    float: left;
-    margin-right: 1.449%;
+    width: 28.571%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -1em;
     display: inline;
   }
 }

@@ -196,15 +196,15 @@ ul.twitter_users {
     h3 {
       @include trailer(1);
     }
-    @include at-breakpoint(60em 14) { 
+    @include at-breakpoint(60em 10) { 
       .avatar {
-        @include span-columns(1,14); 
+        @include span-columns(1,10); 
       }
       .about {
-        @include span-columns(5,14); 
+        @include span-columns(6,10); 
       }
       .follow {
-        @include span-columns(3,14); 
+        @include span-columns(3 omega,10); 
       }
     }
     @include trailer(1);
