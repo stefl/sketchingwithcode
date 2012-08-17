@@ -6,10 +6,12 @@
 
 require File.expand_path("../config/boot.rb", __FILE__)
 
-require 'resque/server'
+run Padrino.application
 
-use Rack::Mongoid::Middleware::IdentityMap
+# require 'resque/server'
 
-run Rack::URLMap.new \
-  "/"       => Padrino.application,
-  "/resque" => Resque::Server.new
+# use Rack::Mongoid::Middleware::IdentityMap
+
+# run Rack::URLMap.new \
+#   "/"       => Padrino.application,
+#   "/resque" => Resque::Server.new
