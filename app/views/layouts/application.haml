@@ -93,7 +93,7 @@
             <a href="https://twitter.com/stef" class="twitter-follow-button" data-button="grey" data-text-color="#FFFFFF" data-link-color="#FFFFFF" data-show-count="false">Follow @stef</a>
 
       
-      %footer
+      %footer#footer
         = button_to "Refresh", url_for(:posts, :refresh), :method => :post
   = yield_content :scripts
   %script{:src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8", :type=>"text/javascript"}
