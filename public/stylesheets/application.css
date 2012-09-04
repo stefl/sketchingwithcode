@@ -147,7 +147,7 @@ body h1 a {
   clear: both;
 }
 /* line 61, ../../app/stylesheets/application.scss */
-.page footer {
+.page footer#footer {
   clear: both;
   text-align: center;
   float: none;
