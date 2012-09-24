@@ -171,6 +171,13 @@ article {
     @include leader(1);
     @include trailer(1);
   }
+  h3 {
+    font-family: "ratio", sans-serif;
+    font-weight: bold;
+    @include adjust-font-size-to($base-font-size * 1.275, $lines:2);
+    @include leader(1);
+    @include trailer(1);
+  }
   h2.comments {
     text-align: center;
     @include leader(1);
