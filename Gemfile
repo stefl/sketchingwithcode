@@ -1,5 +1,6 @@
 source :rubygems
 ruby '1.9.3'
+gem 'maruku', :git =>"git://github.com/stefl/maruku.git"
 gem 'rake'
 gem 'sinatra-flash', :require => 'sinatra/flash'
 gem 'haml'
