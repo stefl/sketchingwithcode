@@ -233,3 +233,12 @@ img.full-width {
   @include trailer(1);
   font-family: "ratio", sans-serif;
 }
+
+.content {
+  ul {
+    li {
+      list-style-type: circle;
+      margin-left: 2em;
+    }
+  }
+}

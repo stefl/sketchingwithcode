@@ -1,4 +1,4 @@
-/* line 17, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,55 +20,55 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 61, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 61, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 * html {
   font-size: 100%;
 }
 
-/* line 64, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 64, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
   font-size: 16px;
   line-height: 1.5em;
@@ -83,19 +83,19 @@ body {
 body a {
   color: #8a4945;
 }
-/* line 18, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 18, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body a:visited {
   color: #bc7d79;
 }
-/* line 21, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 21, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body a:focus {
   color: #c48d8a;
 }
-/* line 24, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body a:hover {
   color: #ab5c57;
 }
-/* line 27, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body a:active {
   color: #b36c68;
 }
@@ -136,7 +136,7 @@ body h1 a {
   padding-left: 1em;
   padding-right: 1em;
 }
-/* line 38, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .page:after {
   content: "";
   display: table;
@@ -163,7 +163,7 @@ body h1 a {
   font-family: "ratio", sans-serif;
   font-weight: normal;
   font-size: 0.875em;
-  line-height: 1.71429em;
+  line-height: 1.714em;
   color: #555;
   text-align: center;
 }
@@ -181,18 +181,22 @@ body h1 a {
 @media (min-width: 60em) {
   /* line 86, ../../app/stylesheets/application.scss */
   .page nav {
-    width: 20.28986%;
+    width: 20.29%;
     float: left;
-    margin-right: 1.44928%;
+    margin-right: 1.449%;
+    display: inline;
     float: right;
     margin-right: 0;
+    #margin-left: -1em;
+    display: inline;
   }
   /* line 90, ../../app/stylesheets/application.scss */
   .page .content {
-    padding-left: 21.73913%;
-    width: 56.52174%;
+    padding-left: 21.739%;
+    width: 56.522%;
     float: left;
-    margin-right: 1.44928%;
+    margin-right: 1.449%;
+    display: inline;
   }
 }
 
@@ -251,7 +255,7 @@ header#header h2 {
   /* line 124, ../../app/stylesheets/application.scss */
   header#header h2 {
     font-size: 1.33em;
-    line-height: 3.38346em;
+    line-height: 3.383em;
   }
 }
 
@@ -301,7 +305,7 @@ header#header h2 {
   font-family: "ratio", sans-serif;
   font-weight: bold;
   font-size: 1.275em;
-  line-height: 2.35294em;
+  line-height: 2.353em;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
@@ -334,7 +338,7 @@ ul.twitter_users {
 ul.twitter_users li {
   width: 100%;
   float: left;
-  margin-right: 2.04082%;
+  margin-right: 2.041%;
   display: inline;
   float: right;
   margin-right: 0;
@@ -349,21 +353,25 @@ ul.twitter_users li h3 {
 @media (min-width: 60em) {
   /* line 208, ../../app/stylesheets/application.scss */
   ul.twitter_users li .avatar {
-    width: 8.16327%;
+    width: 8.163%;
     float: left;
-    margin-right: 2.04082%;
+    margin-right: 2.041%;
+    display: inline;
   }
   /* line 211, ../../app/stylesheets/application.scss */
   ul.twitter_users li .about {
-    width: 59.18367%;
+    width: 59.184%;
     float: left;
-    margin-right: 2.04082%;
+    margin-right: 2.041%;
+    display: inline;
   }
   /* line 214, ../../app/stylesheets/application.scss */
   ul.twitter_users li .follow {
-    width: 28.57143%;
+    width: 28.571%;
     float: right;
     margin-right: 0;
+    #margin-left: -1em;
+    display: inline;
   }
 }
 
@@ -382,4 +390,10 @@ img.full-width {
   padding-right: 1.5em;
   margin-bottom: 1.5em;
   font-family: "ratio", sans-serif;
+}
+
+/* line 239, ../../app/stylesheets/application.scss */
+.content ul li {
+  list-style-type: circle;
+  margin-left: 2em;
 }
