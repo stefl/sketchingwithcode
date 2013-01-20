@@ -15,6 +15,14 @@ $container-style: magic;
 $background-color: #f8faf4;
 $link-color:   #8a4945;
 
+// You custom settings file to override Foundation defaults
+@import "settings";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+
+
 @import "susy";
 
 @include establish-baseline;
@@ -88,8 +96,8 @@ body {
       @include omega();
     }
     .content { 
-      @include prefix(3);
-      @include span-columns(8,14);
+      @include prefix(2);
+      @include span-columns(10,14);
     }
   }
 }

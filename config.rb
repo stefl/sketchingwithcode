@@ -1,4 +1,5 @@
 require "susy"
+require "zurb-foundation"
 
 http_path = "/"
 cache_dir = "tmp/sass-cache" 
