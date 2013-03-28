@@ -11,7 +11,7 @@
     %link{:rel => "apple-touch-icon-precomposed", :sizes=>"57x57", :href=>"/icons/icon57x57.png"}/
     %link{:rel => "apple-touch-icon-precomposed", :sizes=>"72x72", :href=>"/icons/icon72x72.png"}/
     %link{:rel => "apple-touch-icon-precomposed", :sizes=>"114x114", :href=>"/icons/icon114x114.png"}/
-    
+
     %meta{:name => "keywords", :value => "Sketching with Code"}
     %meta{:name => "description", :value => "A blog about culture and code"}
     %meta{:name => "MSSmartTagsPreventParsing", :content => "true"}/
@@ -20,17 +20,17 @@
     %meta{:name=>"apple-mobile-web-app-capable", :content=>"yes"}/
     %meta{:name=>"apple-mobile-web-app-status-bar-style", :content=>"black"}/
     %link{:href => "/stylesheets/application.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}/
-    
+
     = favicon_tag '/favicon.ico'
     %script{:src=>"/javascripts/modernizr.js",:type=>"text/javascript"}
-  
+
     <script type="text/javascript" src="http://use.typekit.com/sla1ora.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>    
-    
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
-    - if Padrino.env == :production  
+    - if Padrino.env == :production
       :javascript
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-32493853-1']);
@@ -46,48 +46,26 @@
 
   %body{:id=>(request.path.split("/")[1] rescue "")}
     .page
-      %header#header          
+      %header#header
         %h1#logo
           %a{:title=>"Sketching with code", :href=>"/"} Sketching with Code
         %h2
           Culture, hack days and what happens next…
       %section.content
         = yield
-      %nav  
+      %nav
         %p
-          This started as a research project by me, 
-          = succeed(",") do
-            %a{:href=>"http://stef.io"} Stef
-          in which I am looking at
-          %a{:href=>"/2012/05/26/hacker-culture"} how and what are cultural organisations learning from hacker culture?
-          in advance of a short publication which will be out soon. 
-
+          %span#follow_button
+            <a href="https://twitter.com/stef" class="twitter-follow-button" data-button="grey" data-text-color="#FFFFFF" data-link-color="#FFFFFF" data-show-count="false">Follow @stef</a>
         %p
-          By the end I needed to take what I'd learnt and apply it. The result is my new company
+          I'm Stef –
+          cofounder at
           = succeed(".") do
-            %a{:href=>"http://makeshift.io"} Makeshift 
-        
+            %a{:href=>"http://makeshift.io"} Makeshift
+          I'm a designer, technologist and startup person - a hacker for short.
         %p
-          During the time I was writing this I waas
-          %a{:href=>"http://www.welcometosync.com/geeks/"} Geek in Residence
-          on the Scottish island of Eigg at an early-stage center for arts and creativity 
-          %a{:href=>"http://eiggbox.com"} Eigg Box
-          as well as hacker in residence at Comic Relief's 
-          %a{:href=>"http://exploralaboratorium.com"} Exploralaboratorium
-          for much of the Autumn.
-          
-        %p
-          With
-          = succeed(",") do
-            %a{:href=>"/thanks"} thanks to everyone who's helped
-          including financial support from
-          = succeed(",") do
-            %a{:href=>"http://cloreleadership.org"} Clore
-          = succeed(",") do
-            %a{:href=>"http://nesta.org.uk"} NESTA
-          and
-          = succeed(",") do
-            %a{:href=>"http://www.welcometosync.com"} Sync
+          This is my ongoing research into rapidly developing digital ideas through a "hack, play, learn" approach. "Sketching with code" is how I work. You might want to
+          %a{:href=>"/2012/05/26/hacker-culture"} start at the beginning
 
         %p
           %strong
@@ -105,14 +83,31 @@
           %li
             %a{:href=>"http://topictelly.herokuapp.com"} Topic Telly
             Educational video content for Schools from Comic Relief
-
+          %li
+            %a{:href=>"http://dareroulette.herokuapp.com/"} Dare Roulette
+          %li
+            %a{:href=>"http://megamiles.herokuapp.com/"} Mega Miles
+          %li
+            %a{:href=>"http://havethelastlaugh.com/"} The Last Laugh
+          %li
+            %a{:href=>"http://fundeer.org/"} Fundeer
           %li
             %a{:href=>"http://skit.io"} Skit
             Use Dropbox to create and manage a small website
 
+        %p
+          %strong
+            %a{:href=>"http://stef.io/hacks"} All of my hacks
 
         %p
-          %a{:href=>"http://stef.io/hacks"} All of my hacks
+          During the time I was writing this I was
+          %a{:href=>"http://www.welcometosync.com/geeks/"} Geek in Residence
+          on the Scottish island of Eigg at an early-stage center for arts and creativity
+          %a{:href=>"http://eiggbox.com"} Eigg Box
+          as well as hacker in residence at Comic Relief's
+          %a{:href=>"http://exploralaboratorium.com"} Exploralaboratorium
+          for much of the Autumn of 2012 before starting Makeshift.
+
         %p
           = succeed(".") do
             %a{:href=>"https://github.com/stefl/sketchingwithcode"} Source code
@@ -121,13 +116,20 @@
             words
 
         %p
-          %span#follow_button
-            <a href="https://twitter.com/stef" class="twitter-follow-button" data-button="grey" data-text-color="#FFFFFF" data-link-color="#FFFFFF" data-show-count="false">Follow @stef</a>
-
-      
+          With
+          = succeed(",") do
+            %a{:href=>"/thanks"} thanks to everyone who's helped
+          including financial support from
+          = succeed(",") do
+            %a{:href=>"http://cloreleadership.org"} Clore
+          = succeed(",") do
+            %a{:href=>"http://nesta.org.uk"} NESTA
+          and
+          = succeed(",") do
+            %a{:href=>"http://www.welcometosync.com"} Sync
       %footer#footer
         = button_to "Refresh", url_for(:posts, :refresh), :method => :post
   = yield_content :scripts
   %script{:src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8", :type=>"text/javascript"}
-  
+
   = "<!-- Rendered at #{Time.now} -->"
