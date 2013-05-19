@@ -1,19 +1,34 @@
+- # coding: utf-8
+- hue = (MurmurHash3::V32.str_hash(@posts.first.title).to_f % 256).to_i
+
+- content_for :header do
+  .mega{:style=>"background-color:hsl(#{hue},50%,75%);"}
+    %h1
+      Sketching with Code
+
+- content_for :sass do
+  :sass
+    $article-link-color: hsl(#{hue},50%,50%)
+    body.#{@post.slug}
+      a
+        color: $article-link-color
+        &:hover, &:visited
+          color: lighten($article-link-color, 10)
+
 %section.posts
   - unless @posts.blank?
     - @posts.each do |post|
-      %article.post
-        %header
-          - if post.draft
-            %h1.draft= post.title
-            %p
-              Draft
-          - else
-            %h1= link_to(post.title, post.url)
+      %article.post{:class=> post.draft ? "draft" : "written"}
+
+        - if post.draft
+          %h1.draft= post.title
+          %p
+            Draft
+        - else
+          %h1= link_to(post.title, post.url)
+          %p
+            = truncate_words(CGI.unescapeHTML(strip_tags(post.content_html.html_safe)), {:length => 50}).html_safe
+          - if false
             %p
               = distance_of_time_in_words(Date.today, post.published_at)
               ago
-
-
-%p#draft_items
-  %em
-    Items marked as "draft" are me making a promise that I will write about this subject, but I'm still thinking it through.

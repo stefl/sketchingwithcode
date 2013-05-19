@@ -43,96 +43,53 @@
           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
+    = yield_content :sass
 
-  %body{:id=>(request.path.split("/")[1] rescue "")}
-    .page
-      %header#header
-        %h1#logo
-          %a{:title=>"Sketching with code", :href=>"/"} Sketching with Code
-        %h2
-          Culture, hack days and what happens next…
-      %section.content
+  %body{:id=>(request.path.split("/")[1] rescue ""), :class => @post ? @post.slug : ""}
+    .page.grid
+      .header
+        = yield_content :header
+      .content
         = yield
-      %nav
-        %p
-          %span#follow_button
-            <a href="https://twitter.com/stef" class="twitter-follow-button" data-button="grey" data-text-color="#FFFFFF" data-link-color="#FFFFFF" data-show-count="false">Follow @stef</a>
-        %p
-          I'm Stef –
-          cofounder at
-          = succeed(".") do
-            %a{:href=>"http://makeshift.io"} Makeshift
-          I'm a designer, technologist and startup person - a hacker for short.
-        %p
-          This is my ongoing research into rapidly developing digital ideas through a "hack, play, learn" approach. "Sketching with code" is how I work. You might want to
-          %a{:href=>"/2012/05/26/hacker-culture"} start at the beginning
+      %footer.footer
+        .top_footer
+          .left_footer
+            %a{:href=>"http://stef.io", :rel => "me"}
+              %img{:src=>"/images/stef_square.png", :alt => "A square photo of Stef Lewandowski"}
 
-        %p
-          %strong
-            Some of the hacks:
-        %ul
-          %li
-            %a{:href=>"http://datanecklace.com"} Data Necklace
-            A wearable visualisation of your tweets
-          %li
-            %a{:href=>"http://linetime.herokuapp.com"} Linetime
-            Historical timelines with embedded media
-          %li
-            %a{:href=>"http://croft6.herokuapp.com"} Croft Number 6
-            A tiny museum website
-          %li
-            %a{:href=>"http://fencer.herokuapp.com"} Fence subscriptions
-            Recurring subscription payments for digital content
-          %li
-            %a{:href=>"http://topictelly.herokuapp.com"} Topic Telly
-            Educational video content for Schools from Comic Relief
-          %li
-            %a{:href=>"http://dareroulette.herokuapp.com/"} Dare Roulette
-          %li
-            %a{:href=>"http://megamiles.herokuapp.com/"} Mega Miles
-          %li
-            %a{:href=>"http://havethelastlaugh.com/"} The Last Laugh
-          %li
-            %a{:href=>"http://fundeer.org/"} Fundeer
-          %li
-            %a{:href=>"http://skit.io"} Skit
-            Use Dropbox to create and manage a small website
+          .right_footer
 
-        %p
-          %strong
-            %a{:href=>"http://stef.io/hacks"} All of my hacks
+            %h2
+              I'm
+              %a{:href=>"http://stef.io"} Stef
+            %p
+              %em
+                Cofounder at
+                = succeed(".") do
+                  %a{:href=>"http://makeshift.io"} Makeshift
+            %p
+              I'm a designer, technologist and startup person - a hacker for short.
 
-        %p
-          During the time I was writing this I was
-          %a{:href=>"http://www.welcometosync.com/geeks/"} Geek in Residence
-          on the Scottish island of Eigg at an early-stage center for arts and creativity
-          %a{:href=>"http://eiggbox.com"} Eigg Box
-          as well as hacker in residence at Comic Relief's
-          %a{:href=>"http://exploralaboratorium.com"} Exploralaboratorium
-          for much of the Autumn of 2012 before starting Makeshift.
 
-        %p
-          = succeed(".") do
-            %a{:href=>"https://github.com/stefl/sketchingwithcode"} Source code
-            to these
+        .bottom_footer
+          %p
+            This is my ongoing research into rapidly developing digital ideas through a "hack, play, learn" approach. "Sketching with code" is how I describe how I work.
+          %p
+            Have a look at the
+            %a{:href=>"http://stef.io/hacks"} hacks
+            and
+            %a{:href=>"https://github.com/stefl/sketchingwithcode"} source code
+            to the app that serves up these
             = Post.all.sum(&:word_count) rescue 0
-            words
+            words.
 
-        %p
-          With
-          = succeed(",") do
-            %a{:href=>"/thanks"} thanks to everyone who's helped
-          including financial support from
-          = succeed(",") do
-            %a{:href=>"http://cloreleadership.org"} Clore
-          = succeed(",") do
-            %a{:href=>"http://nesta.org.uk"} NESTA
-          and
-          = succeed(",") do
-            %a{:href=>"http://www.welcometosync.com"} Sync
-      %footer#footer
-        = button_to "Refresh", url_for(:posts, :refresh), :method => :post
+          %p
+            With
+            = succeed(".") do
+              %a{:href=>"/thanks"} thanks
+              to everyone who's helped
+          %p
+            = button_to "Refresh", url_for(:posts, :refresh), :method => :post
   = yield_content :scripts
   %script{:src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8", :type=>"text/javascript"}
 
-  = "<!-- Rendered at #{Time.now} -->"

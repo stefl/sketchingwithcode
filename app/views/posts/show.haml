@@ -1,9 +1,25 @@
+- # coding: utf-8
+- require "compass"
+- hue = (MurmurHash3::V32.str_hash(@post.title).to_f % 256).to_i
+
 - content_for :scripts do
   %script{:src => "http://disqus.com/forums/sketchingwithcode/embed.js", :type => "text/javascript"}
-%article  
-  %header
+- content_for :sass do
+  :sass
+    $article-link-color: hsl(#{hue},50%,50%)
+    body.#{@post.slug}
+      a
+        color: $article-link-color
+        &:hover
+          color: lighten($article-link-color, 10)
+
+
+- content_for :header do
+  %a.back_link{:href=>"/"} Sketching with Code
+  .mega{:style=>"background-color:hsl(#{hue},50%,75%);"}
     %h1= @post.title
-  = @post.content_html
+%article
+  = @post.content_html.html_safe
   %footer#comments
     #disqus_thread
     %noscript

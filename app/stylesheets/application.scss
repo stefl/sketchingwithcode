@@ -4,38 +4,37 @@
 @import "compass/typography/vertical_rhythm";
 @import "compass/typography/links/link-colors";
 
-$total-columns  : 14;             // a 12-column grid
-$column-width   : 4em;            // each column is 4em wide
+$total-columns  : 12;             // a 12-column grid
+$column-width   : 3em;            // each column is 4em wide
 $gutter-width   : 1em;            // 1em gutters between columns
 $grid-padding   : $gutter-width;  // grid-padding equal to gutters
 
-$media-layout: 14;          // Use 12-col layout at matching min-width.
+$media-layout: 12;          // Use 12-col layout at matching min-width.
 
 $container-style: magic;
 $background-color: #f8faf4;
-$link-color:   #8a4945;
-
-// You custom settings file to override Foundation defaults
-@import "settings";
-
-// Comment out this import if you are customizing you imports below
-@import "foundation";
-
-
+$link-color:   #ff6600;
+$title-link-color: #222;
 
 @import "susy";
 
 @include establish-baseline;
 
+ul {
+  @include trailer(1);
+}
 body {
-  background-color: $background-color;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fdfdfc;
   a {
     @include link-colors($link-color, lighten($link-color,10), lighten($link-color,15), lighten($link-color,20), lighten($link-color,25));
   }
   h1 a {
     text-decoration: none;
+    color: #222;
+    @include link-colors($title-link-color, lighten($title-link-color,10), lighten($title-link-color,15), lighten($title-link-color,20), lighten($title-link-color,25));
   }
-  color: #222;
+  color: rgb(50,50,50);
 }
 
 
@@ -55,15 +54,15 @@ body {
     width: 100%;
     height: 100%;
   }
-  
+
 }
 
-.page { 
+.page {
   font-family: "ff-tisa-web-pro",serif;
-  @include container; 
+  @include container;
 
-  header{ 
-    clear: both; 
+  header{
+    clear: both;
   }
 
   footer#footer {
@@ -73,32 +72,10 @@ body {
     @include leader(1);
     @include trailer(1);
   }
-  nav {
-    p {
-      font-family: "ratio", sans-serif;
-      font-weight: normal;
-      @include adjust-font-size-to($base-font-size * 0.875, $lines:1);
-      color: #555;
-      text-align: center;
-      @include at-breakpoint(60em 14) { 
-        text-align: left;
-      }
-    }
-  }
+
   .twitter-follow-button {
     position: relative;
     top: 6px;
-  }
-  
-  @include at-breakpoint(60em 14) { 
-    nav { 
-      @include span-columns(3,14); 
-      @include omega();
-    }
-    .content { 
-      @include prefix(2);
-      @include span-columns(10,14);
-    }
   }
 }
 
@@ -106,7 +83,7 @@ h1 {
   @include adjust-font-size-to($base-font-size * 2, $lines:2);
   font-family: "ratio", sans-serif;
   font-weight: 100;
-  @include at-breakpoint(60em 14) { 
+  @include at-breakpoint(60em 12) {
     @include adjust-font-size-to($base-font-size * 3, $lines:2);
   }
 }
@@ -124,19 +101,18 @@ header#header {
       text-align: center;
       font-family: "learning-curve-dashed", cursive;
       font-weight: normal;
-      @include at-breakpoint(60em 14) { 
+      @include at-breakpoint(60em 12) {
         @include adjust-font-size-to($base-font-size * 8, $lines:4);
       }
     }
   }
   h2 {
     font-family: "ratio", sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     @include adjust-font-size-to($base-font-size * 1, $lines:1);
-    text-weight: light;
     text-align: center;
     color: darken($background-color,40);
-    @include at-breakpoint(60em 14) { 
+    @include at-breakpoint(60em 12) {
       @include adjust-font-size-to($base-font-size * 1.33, $lines:3);
     }
   }
@@ -144,35 +120,111 @@ header#header {
   @include padding-trailer(1);
   @include leader(1);
 }
+.back_link {
+  margin: auto;
+  @include leader(0);
+  padding-left: 1em;
+  padding-right: 1em;
+  @include padding-trailer(0.5);
+  @include padding-leader(0.5);
+  display: block;
+  text-align: center;
+  color: #222;
+  font-family: "learning-curve", cursive;
+  @include adjust-font-size-to($base-font-size * 2, $lines:1);
+  -webkit-font-smoothing: legibility;
+  text-decoration: none;
+  &:visited {
+    color: #222;
+  }
+}
+.mega {
+  text-align: center;
+  background-color: #fdf2ee;
+  @include trailer(2);
+  @include padding-leader(2);
+  @include padding-trailer(2);
+  @include span-columns(10 omega,10);
+  h1 {
+    font-family: "learning-curve-dashed", cursive;
+
+    word-spacing:12em;
+    @include text-shadow(rgba(255,255,255, 0.5) 0px 2px 1px);
+    @include at-breakpoint(0 12 30em) {
+      font-family: "learning-curve", cursive;
+      @include adjust-font-size-to($base-font-size * 4, $lines:2);
+    }
+    @include at-breakpoint(30em 12 60em) {
+      @include adjust-font-size-to($base-font-size * 6, $lines:3);
+    }
+    @include at-breakpoint(60em 12) {
+      @include adjust-font-size-to($base-font-size * 10, $lines:5);
+    }
+  }
+}
+.post {
+  border-bottom: 1px solid #ddd;
+  h1 {
+    a {
+      @include link-colors($title-link-color, lighten($title-link-color,10), lighten($title-link-color,15), lighten($title-link-color,20), lighten($title-link-color,25));
+      text-decoration: none;
+    }
+  }
+  &.draft {
+    opacity: 0.5;
+  }
+}
+.posts {
+  h1 {
+    font-weight: 700;
+    @include at-breakpoint(0 12 45em) {
+      @include adjust-font-size-to($base-font-size * 1.2 * 1.666, $lines:1.75);
+    }
+    @include at-breakpoint(45em 12) {
+      @include adjust-font-size-to($base-font-size * 1.4 * 1.666, $lines:1.75);
+    }
+    @include trailer(0);
+  }
+  article {
+    p {
+      @include at-breakpoint(0 12 30em) {
+        @include adjust-font-size-to($base-font-size * 1, $lines:1.5);
+      }
+      @include at-breakpoint(30 12 60em) {
+        @include adjust-font-size-to($base-font-size * 1.2, $lines:1.666);
+      }
+      @include at-breakpoint(60em 12) {
+        @include adjust-font-size-to($base-font-size * 1.4, $lines:1.75);
+      }
+      @include trailer(0);
+    }
+  }
+}
 .page {
   article {
-    background-color: rgba(255,255,255,0.7);
     @include padding-leader(1);
     @include padding-trailer(1);
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    @include at-breakpoint(60em 14) { 
-      padding-left: 1.5em;
-      padding-right: 1.5em;
+    p, li {
+      @include at-breakpoint(0 12 30em) {
+        @include adjust-font-size-to($base-font-size * 1, $lines:1);
+      }
+      @include at-breakpoint(30em 12 60em) {
+        @include adjust-font-size-to($base-font-size * 1.2, $lines:1.333);
+      }
+      @include at-breakpoint(60em 12) {
+        @include adjust-font-size-to($base-font-size * 1.4, $lines:1.5);
+      }
     }
     header {
       h1 {
-        @include trailer(0.25);
+        @include trailer(1);
       }
       p {
         @include trailer(0);
         color: #aaa;
-        font-family: "ratio", sans-serif;
       }
     }
-    h1 {
-      a, a:visited {
-        color: darken($background-color,50);
-      }
-      &.draft {
-        color: #aaa;
-      }
-    }
+
     h2 {
       font-family: "ratio", sans-serif;
       @include adjust-font-size-to($base-font-size * 1.5, $lines:2);
@@ -199,7 +251,7 @@ header#header {
 
 p {
   &:first-child {
-    @include leader;  
+    @include leader;
   }
   @include trailer;
 }
@@ -207,20 +259,20 @@ p {
 ul.twitter_users {
   @include clearfix();
   li {
-    @include span-columns(10,10); 
+    @include span-columns(10,10);
     @include omega();
     h3 {
       @include trailer(1);
     }
-    @include at-breakpoint(60em 10) { 
+    @include at-breakpoint(60em 12) {
       .avatar {
-        @include span-columns(1,10); 
+        @include span-columns(1,12);
       }
       .about {
-        @include span-columns(6,10); 
+        @include span-columns(6,12);
       }
       .follow {
-        @include span-columns(3 omega,10); 
+        @include span-columns(3 omega,12);
       }
     }
     @include trailer(1);
@@ -243,10 +295,40 @@ img.full-width {
 }
 
 .content {
+  clear: both;
+  @include clearfix;
   ul {
     li {
       list-style-type: circle;
       margin-left: 2em;
     }
   }
+}
+
+.footer {
+  @include leader(1);
+  h2 {
+    font-family: "ratio", sans-serif;
+    font-weight: 700;
+    @include adjust-font-size-to($base-font-size * 1, $lines:1);
+    text-align: left;
+    @include at-breakpoint(60em 12) {
+      @include adjust-font-size-to($base-font-size * 1.33, $lines:3);
+    }
+  }
+  .top_footer, .bottom_footer {
+    @include span-columns(12 omega, 12);
+    clear: both;
+    @include clearfix;
+  }
+  .left_footer {
+    @include span-columns(3, 12);
+    img {
+      width: 100%;
+    }
+  }
+  .right_footer {
+    @include span-columns(9 omega, 12);
+  }
+
 }
