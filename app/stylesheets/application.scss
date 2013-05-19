@@ -310,11 +310,8 @@ img.full-width {
   h2 {
     font-family: "ratio", sans-serif;
     font-weight: 700;
-    @include adjust-font-size-to($base-font-size * 1, $lines:1);
+    @include adjust-font-size-to($base-font-size * 1.5, $lines:2);
     text-align: left;
-    @include at-breakpoint(60em 12) {
-      @include adjust-font-size-to($base-font-size * 1.33, $lines:3);
-    }
   }
   .top_footer, .bottom_footer {
     @include span-columns(12 omega, 12);

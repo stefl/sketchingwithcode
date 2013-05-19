@@ -535,18 +535,11 @@ img.full-width {
 .footer h2 {
   font-family: "ratio", sans-serif;
   font-weight: 700;
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 1.5em;
+  line-height: 2em;
   text-align: left;
 }
-@media (min-width: 60em) {
-  /* line 310, ../../app/stylesheets/application.scss */
-  .footer h2 {
-    font-size: 1.33em;
-    line-height: 3.38346em;
-  }
-}
-/* line 319, ../../app/stylesheets/application.scss */
+/* line 316, ../../app/stylesheets/application.scss */
 .footer .top_footer, .footer .bottom_footer {
   width: 100%;
   float: right;
@@ -557,18 +550,18 @@ img.full-width {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 324, ../../app/stylesheets/application.scss */
+/* line 321, ../../app/stylesheets/application.scss */
 .footer .left_footer {
   width: 23.40426%;
   float: left;
   margin-right: 2.12766%;
   display: inline;
 }
-/* line 326, ../../app/stylesheets/application.scss */
+/* line 323, ../../app/stylesheets/application.scss */
 .footer .left_footer img {
   width: 100%;
 }
-/* line 330, ../../app/stylesheets/application.scss */
+/* line 327, ../../app/stylesheets/application.scss */
 .footer .right_footer {
   width: 74.46809%;
   float: right;
