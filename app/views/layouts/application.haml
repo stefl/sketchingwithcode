@@ -19,7 +19,7 @@
     %meta{:name=>"viewport", :content=>"width=device-width,initial-scale=1;maximum-scale=1;minimum-scale=1;user-scalable=no;"}/
     %meta{:name=>"apple-mobile-web-app-capable", :content=>"yes"}/
     %meta{:name=>"apple-mobile-web-app-status-bar-style", :content=>"black"}/
-    %link{:href => "/stylesheets/application.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}/
+    = stylesheet_link_tag "application"
 
     = favicon_tag '/favicon.ico'
     %script{:src=>"/javascripts/modernizr.js",:type=>"text/javascript"}
