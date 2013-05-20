@@ -887,8 +887,8 @@ nav ul li {
 }
 /* line 474, ../../app/stylesheets/application.scss */
 .chapter-list ul li a {
-  font-size: 1.5em;
-  line-height: 2em;
+  font-size: 1.2em;
+  line-height: 2.5em;
   text-decoration: none;
   display: block;
 }
@@ -896,31 +896,40 @@ nav ul li {
 .chapter-list ul li a.active {
   color: #222;
 }
+/* line 481, ../../app/stylesheets/application.scss */
+.chapter-list ul li a:hover {
+  cursor: pointer;
+}
 
-/* line 489, ../../app/stylesheets/application.scss */
+/* line 492, ../../app/stylesheets/application.scss */
 .start-reading {
   margin-bottom: 6em;
   font-size: 2em;
   line-height: 1.5em;
 }
-/* line 493, ../../app/stylesheets/application.scss */
+/* line 496, ../../app/stylesheets/application.scss */
 .start-reading h2 a {
   color: #222;
 }
 
-/* line 499, ../../app/stylesheets/application.scss */
-.button {
-  background-color: #aaa;
-  padding: 0.5em;
+/* line 503, ../../app/stylesheets/application.scss */
+form label, form input[type=text], form input[type=submit], form input[type=email] {
+  font-size: 1.2em;
+  line-height: 2.5em;
 }
 
-/* line 505, ../../app/stylesheets/application.scss */
-form {
-  padding: 1em;
-  background-color: #f6f6f6;
-}
 /* line 508, ../../app/stylesheets/application.scss */
-form label, form input[type=text], form input[type=submit], form input[type=email] {
-  font-size: 1.5em;
-  line-height: 2em;
+.email_updates {
+  margin-top: 3em;
+  text-align: center;
+}
+/* line 511, ../../app/stylesheets/application.scss */
+.email_updates input[type=submit] {
+  position: relative;
+  top: -4px;
+}
+/* line 515, ../../app/stylesheets/application.scss */
+.email_updates input[type=email] {
+  margin-left: 1em;
+  padding-left: 1em;
 }

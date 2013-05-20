@@ -472,11 +472,14 @@ nav {
       border-top: 1px solid #eee;
       list-style-type: none;
       a {
-        @include adjust-font-size-to($base-font-size * 1.5, $lines:2);
+        @include adjust-font-size-to($base-font-size * 1.2, $lines:2);
         text-decoration: none;
         display: block;
         &.active {
           color: #222;
+        }
+        &:hover {
+          cursor: pointer;
         }
       }
       text-align: center;
@@ -496,16 +499,21 @@ nav {
   }
 }
 
-.button {
-  background-color: #aaa;
-  padding: 0.5em;
-
+form {
+  label, input[type=text], input[type=submit], input[type=email] {
+    @include adjust-font-size-to($base-font-size * 1.2, $lines:2);
+  }
 }
 
-form {
-  padding: 1em;
-  background-color: #f6f6f6;
-  label, input[type=text], input[type=submit], input[type=email] {
-    @include adjust-font-size-to($base-font-size * 1.5, $lines:2);
+.email_updates {
+  @include leader(2);
+  text-align: center;
+  input[type=submit] {
+    position: relative;
+    top: -4px;
+  }
+  input[type=email] {
+    margin-left: 1em;
+    padding-left: 1em;
   }
 }

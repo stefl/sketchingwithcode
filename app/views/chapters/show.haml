@@ -49,13 +49,17 @@
 
 
 .chapter-list
+  %ul
+    - Chapter.all.order_by([[:ordering, :asc]]).each do |chapter|
+      %li
+        %a{:class => [chapter.slug, @chapter == chapter ? "active" : ""], :href=>"/book/#{chapter.slug}"}= chapter.title
   .email_updates
     :plain
       <div id="mc_embed_signup">
       <form action="http://makeshift.us6.list-manage.com/subscribe/post?u=c14f3f1491719e4e90f5612c9&amp;id=042a791f81" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
       <div class="mc-field-group">
-        <label for="mce-EMAIL">Get emailed as I write more</label>
+        <label for="mce-EMAIL">This is a work in progress. Get updates:</label>
         <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="me@example.com">
         <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn">
       </div>
@@ -65,7 +69,3 @@
       </div>
       </form>
       </div>
-  %ul
-    - Chapter.all.order_by([[:ordering, :asc]]).each do |chapter|
-      %li
-        %a{:class => [chapter.slug, @chapter == chapter ? "active" : ""], :href=>"/book/#{chapter.slug}"}= chapter.title
