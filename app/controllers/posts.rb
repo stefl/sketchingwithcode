@@ -20,9 +20,15 @@ Sketching.controllers :posts do
     redirect "/"
   end
 
-  #   get :sitemap, :map => "/blog/sitemap", :provides => [:xml] do
-  #     #expires_in 30
-  #     File.open(blog_path + "/sitemap.xml").read
-  #   end
+  get :sitemap, :map => "/sitemap", :provides => [:xml], :cache => true do
+    expires_in 5
+    @posts = Post.all.order_by([[:created_at, :desc]])
+    map = XmlSitemap::Map.new('sketchingwithcode.com') do |m|
+      @posts.each do |post|
+        m.add( post.url)
+      end
+    end
+    map.render
+  end
 
 end

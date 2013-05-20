@@ -1,15 +1,15 @@
 Sketching.controllers :hacks do
 
-  get :index, :map=>"/hacks" do
-    #expires_in 30
+  get :index, :map=>"/hacks", :cache => true do
+    expires_in 5
     @hacks = Hack.all.order_by([[:published_at, :desc]])
     @hack = @hacks.first
     @screengrabs = Screengrab.all
     haml :"hacks/index", :layout => !request.xhr?
   end
 
-  get :show, :map => "/hacks/:slug" do
-    #expires_in 30
+  get :show, :map => "/hacks/:slug", :cache => true do
+    expires_in 5
     @hack = Hack.where(:slug => params[:slug]).first
     haml :"hacks/show", :layout => !request.xhr?
   end
@@ -19,8 +19,8 @@ Sketching.controllers :hacks do
     redirect "/"
   end
 
-  get :sitemap, :map => "/hacks/sitemap", :provides => [:xml] do
-    #expires_in 30
+  get :sitemap, :map => "/hacks/sitemap", :provides => [:xml], :cache => true do
+    expires_in 5
     @hacks = Hack.all.order_by([[:published_at, :desc]])
     map = XmlSitemap::Map.new('sketchingwithcode.com') do |m|
       @hacks.each do |hack|
