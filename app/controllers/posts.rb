@@ -17,6 +17,8 @@ Sketching.controllers :posts do
 
   post :refresh, :map => "/posts/refresh" do
     Resque.enqueue(PostFetching)
+    Resque.enqueue(ScreengrabFetching)
+    Resque.enqueue(HackFetching)
     redirect "/"
   end
 

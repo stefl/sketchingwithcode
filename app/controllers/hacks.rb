@@ -14,11 +14,6 @@ Sketching.controllers :hacks do
     haml :"hacks/show", :layout => !request.xhr?
   end
 
-  post :refresh, :map => "/hacks/refresh" do
-    Resque.enqueue(HackFetching)
-    redirect "/"
-  end
-
   get :sitemap, :map => "/hacks/sitemap", :provides => [:xml], :cache => true do
     expires_in 5
     @hacks = Hack.all.order_by([[:published_at, :desc]])
