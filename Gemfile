@@ -11,9 +11,7 @@ gem 'padrino', :github => "padrino/padrino-framework"
 gem 'unicorn', '4.6.2'
 gem 'twitter', :git => "https://github.com/sferik/twitter.git"
 gem 'hashie'
-#gem 'dropbox-sdk', :require =>'dropbox_sdk'
 gem 'dropbox-api'
-gem 'dalli'
 gem 'resque', '1.24.1'
 gem 'mongoid'
 gem 'zurb-foundation'

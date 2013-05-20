@@ -725,12 +725,13 @@ summary:hover {
 
 /* line 424, ../../app/stylesheets/application.scss */
 nav {
+  display: block;
+  clear: both;
   text-align: center;
-}
-/* line 426, ../../app/stylesheets/application.scss */
-nav ul {
-  margin-top: -3em;
   margin-bottom: 3em;
+}
+/* line 429, ../../app/stylesheets/application.scss */
+nav ul {
   list-style-type: none;
 }
 /* line 5, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
@@ -739,7 +740,7 @@ nav ul, nav ul li {
   padding: 0px;
   display: inline;
 }
-/* line 430, ../../app/stylesheets/application.scss */
+/* line 432, ../../app/stylesheets/application.scss */
 nav ul li {
   display: inline-block;
   padding-left: 1em;
@@ -748,12 +749,77 @@ nav ul li {
   line-height: 2em;
 }
 
-/* line 439, ../../app/stylesheets/application.scss */
+/* line 441, ../../app/stylesheets/application.scss */
+.next-prev {
+  margin-top: 6em;
+}
+@media (min-width: 30em) {
+  /* line 444, ../../app/stylesheets/application.scss */
+  .next-prev .prev {
+    width: 48.71795%;
+    float: left;
+    margin-right: 2.5641%;
+    display: inline;
+  }
+  /* line 447, ../../app/stylesheets/application.scss */
+  .next-prev .next {
+    width: 48.71795%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -1em;
+    display: inline;
+    text-align: right;
+  }
+}
+/* line 452, ../../app/stylesheets/application.scss */
+.next-prev a {
+  display: block;
+  font-size: 1.5em;
+  line-height: 1em;
+  text-decoration: none;
+}
+
+/* line 459, ../../app/stylesheets/application.scss */
+.chapter-list {
+  overflow: hidden;
+  *zoom: 1;
+  clear: both;
+  margin-top: 6em;
+  margin-bottom: 6em;
+}
+/* line 464, ../../app/stylesheets/application.scss */
+.chapter-list ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 467, ../../app/stylesheets/application.scss */
+.chapter-list ul li {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #eeeeee;
+  list-style-type: none;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+/* line 472, ../../app/stylesheets/application.scss */
+.chapter-list ul li a {
+  font-size: 1.5em;
+  line-height: 2em;
+  text-decoration: none;
+  display: block;
+}
+/* line 476, ../../app/stylesheets/application.scss */
+.chapter-list ul li a.active {
+  color: #222;
+}
+
+/* line 487, ../../app/stylesheets/application.scss */
 form {
   padding: 1em;
   background-color: #f6f6f6;
 }
-/* line 442, ../../app/stylesheets/application.scss */
+/* line 490, ../../app/stylesheets/application.scss */
 form label, form input[type=text], form input[type=submit], form input[type=email] {
   font-size: 1.5em;
   line-height: 2em;

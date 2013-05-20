@@ -1,0 +1,53 @@
+- # coding: utf-8
+- require "compass"
+- hue = @chapter.hue
+- @hide_footer = true
+
+- content_for :scripts do
+  %script{:src => "http://disqus.com/forums/sketchingwithcode/embed.js", :type => "text/javascript"}
+- content_for :sass do
+  :sass
+    $article-link-color: hsl(#{hue},50%,50%)
+    body.#{@chapter.slug}
+      a
+        color: $article-link-color
+        &:hover
+          color: lighten($article-link-color, 10)
+
+- content_for :sass do
+  - Chapter.all.each do |chapter|
+    :sass
+      body.#{@chapter.slug}
+        a.#{chapter.slug}
+          color: #aaa
+          &:hover
+            color: lighten(hsl(#{chapter.hue},50%,50%), 0)
+
+- content_for :header do
+  %a.back_link{:href=>"/"} Sketching with Code
+  .mega{:style=>"background-color:hsl(#{hue},50%,75%);"}
+    %h1= @chapter.title
+%article
+  = @chapter.content_html.html_safe
+  .next-prev
+    .prev
+      - if @chapter.previous_chapter
+        %a{:href=>"/book/#{@chapter.previous_chapter}"}
+          ⇠
+          = @chapter.previous_chapter.title
+    .next
+      - if @chapter.next_chapter
+        %a{:href=>"/book/#{@chapter.next_chapter}"}
+          = @chapter.next_chapter.title
+          ⇢
+  - if false
+    %footer#comments
+      #disqus_thread
+      %noscript
+        %a{:href => "http://sketchingwithcode.disqus.com/?url=ref"} View the discussion thread.
+
+.chapter-list
+  %ul
+    - Chapter.all.order_by([[:ordering, :asc]]).each do |chapter|
+      %li
+        %a{:class => [chapter.slug, @chapter == chapter ? "active" : ""], :href=>"/book/#{chapter.slug}"}= chapter.title

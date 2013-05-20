@@ -7,3 +7,4 @@ vendor/gems/*
 .sass-cache/*
 foreman.env
 .env
+log

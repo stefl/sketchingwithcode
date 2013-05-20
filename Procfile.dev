@@ -1,3 +1,2 @@
-compass: bundle exec compass watch
 web: bundle exec unicorn -p 4141 -c ./unicorn.rb
 worker: bundle exec rake resque:work QUEUE=web

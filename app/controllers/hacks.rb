@@ -5,6 +5,7 @@ Sketching.controllers :hacks do
     @hacks = Hack.all.order_by([[:published_at, :desc]])
     @hack = @hacks.first
     @screengrabs = Screengrab.all
+
     haml :"hacks/index", :layout => !request.xhr?
   end
 

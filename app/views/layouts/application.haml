@@ -45,52 +45,53 @@
         })();
     = yield_content :sass
 
-  %body{:id=>(request.path.split("/")[1] rescue ""), :class => @post ? @post.slug : ""}
+  %body{:id=>(request.path.split("/")[1] rescue ""), :class => [@post ? @post.slug : "", @chapter ? @chapter.slug : ""] }
     .page.grid
       .header
         = yield_content :header
       .content
         = yield
-      %footer.footer
-        .top_footer
-          .left_footer
-            %a{:href=>"http://stef.io", :rel => "me"}
-              %img{:src=>"/images/stef_square.png", :alt => "A square photo of Stef Lewandowski"}
+      - unless defined?(@hide_footer)
+        %footer.footer
+          .top_footer
+            .left_footer
+              %a{:href=>"http://stef.io", :rel => "me"}
+                %img{:src=>"/images/stef_square.png", :alt => "A square photo of Stef Lewandowski"}
 
-          .right_footer
+            .right_footer
 
-            %h2
-              %a{:href=>"http://stef.io"} Stef Lewandowski
+              %h2
+                %a{:href=>"http://stef.io"} Stef Lewandowski
+              %p
+                %em
+                  Cofounder at
+                  = succeed(".") do
+                    %a{:href=>"http://makeshift.io"} Makeshift
+                %span#follow_button
+                  <a href="https://twitter.com/stef" class="twitter-follow-button" data-button="grey" data-text-color="#FFFFFF" data-link-color="#FFFFFF" data-show-count="false">Follow @stef</a>
+              %p
+                I'm a designer, technologist and startup person - a hacker for short.
+
+
+          .bottom_footer
             %p
-              %em
-                Cofounder at
-                = succeed(".") do
-                  %a{:href=>"http://makeshift.io"} Makeshift
-              %span#follow_button
-                <a href="https://twitter.com/stef" class="twitter-follow-button" data-button="grey" data-text-color="#FFFFFF" data-link-color="#FFFFFF" data-show-count="false">Follow @stef</a>
+              This is my ongoing research into rapidly developing digital ideas through a "hack, play, learn" approach. "Sketching with code" is how I describe how I work.
             %p
-              I'm a designer, technologist and startup person - a hacker for short.
+              Have a look at the
+              %a{:href=>"http://stef.io/hacks"} hacks
+              and
+              %a{:href=>"https://github.com/stefl/sketchingwithcode"} source code
+              to the app that serves up these
+              = Post.all.sum(&:word_count) rescue 0
+              words.
 
-
-        .bottom_footer
-          %p
-            This is my ongoing research into rapidly developing digital ideas through a "hack, play, learn" approach. "Sketching with code" is how I describe how I work.
-          %p
-            Have a look at the
-            %a{:href=>"http://stef.io/hacks"} hacks
-            and
-            %a{:href=>"https://github.com/stefl/sketchingwithcode"} source code
-            to the app that serves up these
-            = Post.all.sum(&:word_count) rescue 0
-            words.
-
-          %p
-            With
-            = succeed(".") do
-              %a{:href=>"/thanks"} thanks
-              to everyone who's helped
-          %p
-            = button_to "Refresh", url_for(:posts, :refresh), :method => :post
+            %p
+              With
+              = succeed(".") do
+                %a{:href=>"/thanks"} thanks
+                to everyone who's helped
+            %p
+              = button_to "Refresh", url_for(:posts, :refresh), :method => :post
   = yield_content :scripts
   %script{:src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8", :type=>"text/javascript"}
 
