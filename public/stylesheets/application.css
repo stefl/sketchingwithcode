@@ -683,22 +683,24 @@ img.full-width {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 397, ../../app/stylesheets/application.scss */
-.hack_row .hack {
-  width: 48.71795%;
-  float: left;
-  margin-right: 2.5641%;
-  display: inline;
-}
-/* line 399, ../../app/stylesheets/application.scss */
-.hack_row .hack.last {
-  float: right;
-  margin-right: 0;
-  #margin-left: -1em;
-  display: inline;
+@media (min-width: 30em) {
+  /* line 398, ../../app/stylesheets/application.scss */
+  .hack_row .hack {
+    width: 48.71795%;
+    float: left;
+    margin-right: 2.5641%;
+    display: inline;
+  }
+  /* line 400, ../../app/stylesheets/application.scss */
+  .hack_row .hack.last {
+    float: right;
+    margin-right: 0;
+    #margin-left: -1em;
+    display: inline;
+  }
 }
 
-/* line 405, ../../app/stylesheets/application.scss */
+/* line 407, ../../app/stylesheets/application.scss */
 .screengrab {
   height: 0px;
   overflow: hidden;
@@ -707,25 +709,25 @@ img.full-width {
   border: 1px solid #dddddd;
 }
 
-/* line 413, ../../app/stylesheets/application.scss */
+/* line 415, ../../app/stylesheets/application.scss */
 details:focus, details:active, details, details[open], summary, summary:focus {
   outline: none;
 }
 
-/* line 415, ../../app/stylesheets/application.scss */
+/* line 417, ../../app/stylesheets/application.scss */
 summary {
   margin-bottom: 1.5em;
 }
-/* line 417, ../../app/stylesheets/application.scss */
+/* line 419, ../../app/stylesheets/application.scss */
 summary:hover {
   color: black;
 }
 
-/* line 422, ../../app/stylesheets/application.scss */
+/* line 424, ../../app/stylesheets/application.scss */
 nav {
   text-align: center;
 }
-/* line 424, ../../app/stylesheets/application.scss */
+/* line 426, ../../app/stylesheets/application.scss */
 nav ul {
   margin-top: -3em;
   margin-bottom: 3em;
@@ -737,7 +739,7 @@ nav ul, nav ul li {
   padding: 0px;
   display: inline;
 }
-/* line 428, ../../app/stylesheets/application.scss */
+/* line 430, ../../app/stylesheets/application.scss */
 nav ul li {
   display: inline-block;
   padding-left: 1em;
@@ -746,12 +748,12 @@ nav ul li {
   line-height: 2em;
 }
 
-/* line 437, ../../app/stylesheets/application.scss */
+/* line 439, ../../app/stylesheets/application.scss */
 form {
   padding: 1em;
   background-color: #f6f6f6;
 }
-/* line 440, ../../app/stylesheets/application.scss */
+/* line 442, ../../app/stylesheets/application.scss */
 form label, form input[type=text], form input[type=submit], form input[type=email] {
   font-size: 1.5em;
   line-height: 2em;

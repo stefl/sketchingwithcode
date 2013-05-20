@@ -394,10 +394,12 @@ img.full-width {
 .hack_row {
   clear: both;
   @include clearfix();
-  .hack {
-    @include span-columns(5, 10);
-    &.last {
-      @include omega;
+  @include at-breakpoint(30em 12) {
+    .hack {
+      @include span-columns(5, 10);
+      &.last {
+        @include omega;
+      }
     }
   }
 }
