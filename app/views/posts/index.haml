@@ -1,5 +1,5 @@
 - # coding: utf-8
-- hue = (MurmurHash3::V32.str_hash(@posts.first.title).to_f % 256).to_i
+- hue = @post.hue
 
 - content_for :header do
   .mega{:style=>"background-color:hsl(#{hue},50%,75%);"}

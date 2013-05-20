@@ -1,0 +1,39 @@
+- hue = @hacks.first.hue
+- content_for :header do
+  .mega{:style=>"background-color:hsl(#{hue},50%,75%);"}
+    %h1
+      Hack, Play, Learn.
+  %h2
+    The
+    = @hacks.count
+    hacks that inspired this site.
+  %p
+    I make web things quickly - some in half an hour, some over a few days. Generally I do them without getting paid directly. Sometimes they turn into projects that turn into day-job material. Some were at hackdays, some were on the kitchen table over a weekend. They're what the last few years has been all about, and it would be silly to be writing about hacking without showing the work itself.
+
+.hacks
+  - @hacks.each_slice(2) do |row|
+    .hack_row
+      - row.each do |hack|
+        %article.hack{:class=> row.last == hack ? "last" : ""}
+          .screengrab
+            - if hack.url && grab = @screengrabs.select {|s| s.slug == hack.url.sub("http://","").gsub(".", "-")}.first
+              %img{:src=>"/screengrabs/l/#{grab.slug}.jpg"}
+          %h1
+            - if hack.url
+              %a{:href=> hack.url }
+                = hack.title
+            - else
+              = hack.title
+          %h2
+            = hack.meta[:short]
+
+          %details
+            %summary About this hack
+
+            - if hack.meta[:hackday]
+              %p
+                %a.hackday{:href=>hack.meta[:hackday_url]}= hack.meta[:hackday]
+                %br
+                = hack.meta[:time]
+
+            = hack.content_html.html_safe

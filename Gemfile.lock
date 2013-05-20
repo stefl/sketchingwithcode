@@ -185,6 +185,8 @@ GEM
       rack
     vegas (0.1.11)
       rack (>= 1.0.0)
+    xml-sitemap (1.3.1)
+      builder (>= 2.0)
     zurb-foundation (3.2.4)
       compass (>= 0.12.2)
       modular-scale (= 1.0.6)
@@ -211,4 +213,5 @@ DEPENDENCIES
   susy
   twitter!
   unicorn (= 4.6.2)
+  xml-sitemap
   zurb-foundation

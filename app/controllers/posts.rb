@@ -11,7 +11,7 @@ Sketching.controllers :posts do
 
   get :show, :map => "/:year/:month/:day/:slug" do
     #expires_in 30
-    @post = Post.where(:slug => params[:slug]).first
+    not_found unless @post = Post.where(:slug => params[:slug]).first
     haml :"posts/show", :layout => !request.xhr?
   end
 

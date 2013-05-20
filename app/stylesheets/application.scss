@@ -88,6 +88,15 @@ h1 {
   }
 }
 
+h2 {
+  @include adjust-font-size-to($base-font-size * 1.4, $lines:2);
+  font-family: "ratio", sans-serif;
+  font-weight: 700;
+  @include at-breakpoint(60em 12) {
+    @include adjust-font-size-to($base-font-size * 2, $lines:2);
+  }
+}
+
 p {
   strong {
     font-weight: bold;
@@ -200,6 +209,58 @@ header#header {
     }
   }
 }
+
+.hacks {
+  article.hack {
+    h1 {
+      font-weight: 700;
+      @include at-breakpoint(0 12 45em) {
+        @include adjust-font-size-to($base-font-size * 1.2 * 1.5, $lines:2);
+      }
+      @include at-breakpoint(45em 12) {
+        @include adjust-font-size-to($base-font-size * 1.4 * 1.5, $lines:2);
+      }
+      @include trailer(0);
+    }
+    h2 {
+      font-weight: normal;
+      font-family: "ff-tisa-web-pro",serif;
+      font-style: italic;
+      @include leader(0);
+      @include at-breakpoint(0 12 45em) {
+        @include adjust-font-size-to($base-font-size * 1.2, $lines:1);
+      }
+      @include at-breakpoint(45em 12) {
+        @include adjust-font-size-to($base-font-size * 1.4, $lines:1);
+      }
+    }
+    p {
+      @include at-breakpoint(0 12 30em) {
+        @include adjust-font-size-to($base-font-size * 1, $lines:1);
+      }
+      @include at-breakpoint(30 12 60em) {
+        @include adjust-font-size-to($base-font-size * 1, $lines:1);
+      }
+      @include at-breakpoint(60em 12) {
+        @include adjust-font-size-to($base-font-size * 1, $lines:1);
+      }
+      @include trailer(0);
+    }
+  }
+}
+
+.hack {
+  h1 {
+    a {
+      @include link-colors($title-link-color, lighten($title-link-color,10), lighten($title-link-color,15), lighten($title-link-color,20), lighten($title-link-color,25));
+      text-decoration: none;
+    }
+  }
+  &.draft {
+    opacity: 0.5;
+  }
+}
+
 .page {
   article {
     @include padding-leader(1);
@@ -328,4 +389,32 @@ img.full-width {
     @include span-columns(9 omega, 12);
   }
 
+}
+
+.hack_row {
+  clear: both;
+  @include clearfix();
+  .hack {
+    @include span-columns(5, 10);
+    &.last {
+      @include omega;
+    }
+  }
+}
+
+.screengrab {
+  height: 0px;
+  overflow: hidden;
+  padding-bottom: 50%;
+  background-color: #eee;
+  border: 1px solid #ddd;
+}
+
+details:focus, details:active, details, details[open], summary, summary:focus { outline: none; }
+
+summary {
+  @include trailer(1);
+  &:hover {
+    color: black;
+  }
 }

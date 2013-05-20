@@ -198,18 +198,33 @@ h1 {
   }
 }
 
-/* line 92, ../../app/stylesheets/application.scss */
+/* line 91, ../../app/stylesheets/application.scss */
+h2 {
+  font-size: 1.4em;
+  line-height: 2.14286em;
+  font-family: "ratio", sans-serif;
+  font-weight: 700;
+}
+@media (min-width: 60em) {
+  /* line 91, ../../app/stylesheets/application.scss */
+  h2 {
+    font-size: 2em;
+    line-height: 1.5em;
+  }
+}
+
+/* line 101, ../../app/stylesheets/application.scss */
 p strong {
   font-weight: bold;
 }
 
-/* line 97, ../../app/stylesheets/application.scss */
+/* line 106, ../../app/stylesheets/application.scss */
 header#header {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   margin-top: 1.5em;
 }
-/* line 99, ../../app/stylesheets/application.scss */
+/* line 108, ../../app/stylesheets/application.scss */
 header#header h1#logo {
   font-size: 4em;
   line-height: 0.75em;
@@ -218,13 +233,13 @@ header#header h1#logo {
   font-weight: normal;
 }
 @media (min-width: 60em) {
-  /* line 99, ../../app/stylesheets/application.scss */
+  /* line 108, ../../app/stylesheets/application.scss */
   header#header h1#logo {
     font-size: 8em;
     line-height: 0.75em;
   }
 }
-/* line 109, ../../app/stylesheets/application.scss */
+/* line 118, ../../app/stylesheets/application.scss */
 header#header h2 {
   font-family: "ratio", sans-serif;
   font-weight: 300;
@@ -234,14 +249,14 @@ header#header h2 {
   color: #9fba68;
 }
 @media (min-width: 60em) {
-  /* line 109, ../../app/stylesheets/application.scss */
+  /* line 118, ../../app/stylesheets/application.scss */
   header#header h2 {
     font-size: 1.33em;
     line-height: 3.38346em;
   }
 }
 
-/* line 123, ../../app/stylesheets/application.scss */
+/* line 132, ../../app/stylesheets/application.scss */
 .back_link {
   margin: auto;
   margin-top: 0em;
@@ -258,12 +273,12 @@ header#header h2 {
   -webkit-font-smoothing: legibility;
   text-decoration: none;
 }
-/* line 137, ../../app/stylesheets/application.scss */
+/* line 146, ../../app/stylesheets/application.scss */
 .back_link:visited {
   color: #222;
 }
 
-/* line 141, ../../app/stylesheets/application.scss */
+/* line 150, ../../app/stylesheets/application.scss */
 .mega {
   text-align: center;
   background-color: #fdf2ee;
@@ -276,14 +291,14 @@ header#header h2 {
   #margin-left: -1em;
   display: inline;
 }
-/* line 148, ../../app/stylesheets/application.scss */
+/* line 157, ../../app/stylesheets/application.scss */
 .mega h1 {
   font-family: "learning-curve-dashed", cursive;
   word-spacing: 12em;
   text-shadow: rgba(255, 255, 255, 0.5) 0px 2px 1px;
 }
 @media (max-width: 30em) {
-  /* line 148, ../../app/stylesheets/application.scss */
+  /* line 157, ../../app/stylesheets/application.scss */
   .mega h1 {
     font-family: "learning-curve", cursive;
     font-size: 4em;
@@ -291,25 +306,25 @@ header#header h2 {
   }
 }
 @media (min-width: 30em) and (max-width: 60em) {
-  /* line 148, ../../app/stylesheets/application.scss */
+  /* line 157, ../../app/stylesheets/application.scss */
   .mega h1 {
     font-size: 6em;
     line-height: 0.75em;
   }
 }
 @media (min-width: 60em) {
-  /* line 148, ../../app/stylesheets/application.scss */
+  /* line 157, ../../app/stylesheets/application.scss */
   .mega h1 {
     font-size: 10em;
     line-height: 0.75em;
   }
 }
 
-/* line 165, ../../app/stylesheets/application.scss */
+/* line 174, ../../app/stylesheets/application.scss */
 .post {
   border-bottom: 1px solid #dddddd;
 }
-/* line 168, ../../app/stylesheets/application.scss */
+/* line 177, ../../app/stylesheets/application.scss */
 .post h1 a {
   color: #222222;
   text-decoration: none;
@@ -330,92 +345,184 @@ header#header h2 {
 .post h1 a:active {
   color: #484848;
 }
-/* line 173, ../../app/stylesheets/application.scss */
+/* line 182, ../../app/stylesheets/application.scss */
 .post.draft {
   opacity: 0.5;
 }
 
-/* line 178, ../../app/stylesheets/application.scss */
+/* line 187, ../../app/stylesheets/application.scss */
 .posts h1 {
   font-weight: 700;
   margin-bottom: 0em;
 }
 @media (max-width: 45em) {
-  /* line 178, ../../app/stylesheets/application.scss */
+  /* line 187, ../../app/stylesheets/application.scss */
   .posts h1 {
     font-size: 1.9992em;
     line-height: 1.31303em;
   }
 }
 @media (min-width: 45em) {
-  /* line 178, ../../app/stylesheets/application.scss */
+  /* line 187, ../../app/stylesheets/application.scss */
   .posts h1 {
     font-size: 2.3324em;
     line-height: 1.12545em;
   }
 }
-/* line 189, ../../app/stylesheets/application.scss */
+/* line 198, ../../app/stylesheets/application.scss */
 .posts article p {
   margin-bottom: 0em;
 }
 @media (max-width: 30em) {
-  /* line 189, ../../app/stylesheets/application.scss */
+  /* line 198, ../../app/stylesheets/application.scss */
   .posts article p {
     font-size: 1em;
     line-height: 2.25em;
   }
 }
 @media (max-width: 60em) {
-  /* line 189, ../../app/stylesheets/application.scss */
+  /* line 198, ../../app/stylesheets/application.scss */
   .posts article p {
     font-size: 1.2em;
     line-height: 2.0825em;
   }
 }
 @media (min-width: 60em) {
-  /* line 189, ../../app/stylesheets/application.scss */
+  /* line 198, ../../app/stylesheets/application.scss */
   .posts article p {
     font-size: 1.4em;
     line-height: 1.875em;
   }
 }
 
-/* line 204, ../../app/stylesheets/application.scss */
+/* line 215, ../../app/stylesheets/application.scss */
+.hacks article.hack h1 {
+  font-weight: 700;
+  margin-bottom: 0em;
+}
+@media (max-width: 45em) {
+  /* line 215, ../../app/stylesheets/application.scss */
+  .hacks article.hack h1 {
+    font-size: 1.8em;
+    line-height: 1.66667em;
+  }
+}
+@media (min-width: 45em) {
+  /* line 215, ../../app/stylesheets/application.scss */
+  .hacks article.hack h1 {
+    font-size: 2.1em;
+    line-height: 1.42857em;
+  }
+}
+/* line 225, ../../app/stylesheets/application.scss */
+.hacks article.hack h2 {
+  font-weight: normal;
+  font-family: "ff-tisa-web-pro",serif;
+  font-style: italic;
+  margin-top: 0em;
+}
+@media (max-width: 45em) {
+  /* line 225, ../../app/stylesheets/application.scss */
+  .hacks article.hack h2 {
+    font-size: 1.2em;
+    line-height: 1.25em;
+  }
+}
+@media (min-width: 45em) {
+  /* line 225, ../../app/stylesheets/application.scss */
+  .hacks article.hack h2 {
+    font-size: 1.4em;
+    line-height: 1.07143em;
+  }
+}
+/* line 237, ../../app/stylesheets/application.scss */
+.hacks article.hack p {
+  margin-bottom: 0em;
+}
+@media (max-width: 30em) {
+  /* line 237, ../../app/stylesheets/application.scss */
+  .hacks article.hack p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}
+@media (max-width: 60em) {
+  /* line 237, ../../app/stylesheets/application.scss */
+  .hacks article.hack p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}
+@media (min-width: 60em) {
+  /* line 237, ../../app/stylesheets/application.scss */
+  .hacks article.hack p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}
+
+/* line 254, ../../app/stylesheets/application.scss */
+.hack h1 a {
+  color: #222222;
+  text-decoration: none;
+}
+/* line 18, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.hack h1 a:visited {
+  color: #555555;
+}
+/* line 21, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.hack h1 a:focus {
+  color: #626262;
+}
+/* line 24, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.hack h1 a:hover {
+  color: #3c3c3c;
+}
+/* line 27, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.hack h1 a:active {
+  color: #484848;
+}
+/* line 259, ../../app/stylesheets/application.scss */
+.hack.draft {
+  opacity: 0.5;
+}
+
+/* line 265, ../../app/stylesheets/application.scss */
 .page article {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
 @media (max-width: 30em) {
-  /* line 207, ../../app/stylesheets/application.scss */
+  /* line 268, ../../app/stylesheets/application.scss */
   .page article p, .page article li {
     font-size: 1em;
     line-height: 1.5em;
   }
 }
 @media (min-width: 30em) and (max-width: 60em) {
-  /* line 207, ../../app/stylesheets/application.scss */
+  /* line 268, ../../app/stylesheets/application.scss */
   .page article p, .page article li {
     font-size: 1.2em;
     line-height: 1.66625em;
   }
 }
 @media (min-width: 60em) {
-  /* line 207, ../../app/stylesheets/application.scss */
+  /* line 268, ../../app/stylesheets/application.scss */
   .page article p, .page article li {
     font-size: 1.4em;
     line-height: 1.60714em;
   }
 }
-/* line 219, ../../app/stylesheets/application.scss */
+/* line 280, ../../app/stylesheets/application.scss */
 .page article header h1 {
   margin-bottom: 1.5em;
 }
-/* line 222, ../../app/stylesheets/application.scss */
+/* line 283, ../../app/stylesheets/application.scss */
 .page article header p {
   margin-bottom: 0em;
   color: #aaa;
 }
-/* line 228, ../../app/stylesheets/application.scss */
+/* line 289, ../../app/stylesheets/application.scss */
 .page article h2 {
   font-family: "ratio", sans-serif;
   font-size: 1.5em;
@@ -423,7 +530,7 @@ header#header h2 {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-/* line 234, ../../app/stylesheets/application.scss */
+/* line 295, ../../app/stylesheets/application.scss */
 .page article h3 {
   font-family: "ratio", sans-serif;
   font-weight: bold;
@@ -432,32 +539,32 @@ header#header h2 {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-/* line 241, ../../app/stylesheets/application.scss */
+/* line 302, ../../app/stylesheets/application.scss */
 .page article h2.comments {
   text-align: center;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-/* line 246, ../../app/stylesheets/application.scss */
+/* line 307, ../../app/stylesheets/application.scss */
 .page article img {
   max-width: 100%;
 }
 
-/* line 252, ../../app/stylesheets/application.scss */
+/* line 313, ../../app/stylesheets/application.scss */
 p {
   margin-bottom: 1.5em;
 }
-/* line 253, ../../app/stylesheets/application.scss */
+/* line 314, ../../app/stylesheets/application.scss */
 p:first-child {
   margin-top: 1.5em;
 }
 
-/* line 259, ../../app/stylesheets/application.scss */
+/* line 320, ../../app/stylesheets/application.scss */
 ul.twitter_users {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 261, ../../app/stylesheets/application.scss */
+/* line 322, ../../app/stylesheets/application.scss */
 ul.twitter_users li {
   width: 100%;
   float: left;
@@ -469,26 +576,26 @@ ul.twitter_users li {
   display: inline;
   margin-bottom: 1.5em;
 }
-/* line 264, ../../app/stylesheets/application.scss */
+/* line 325, ../../app/stylesheets/application.scss */
 ul.twitter_users li h3 {
   margin-bottom: 1.5em;
 }
 @media (min-width: 60em) {
-  /* line 268, ../../app/stylesheets/application.scss */
+  /* line 329, ../../app/stylesheets/application.scss */
   ul.twitter_users li .avatar {
     width: 6.38298%;
     float: left;
     margin-right: 2.12766%;
     display: inline;
   }
-  /* line 271, ../../app/stylesheets/application.scss */
+  /* line 332, ../../app/stylesheets/application.scss */
   ul.twitter_users li .about {
     width: 48.93617%;
     float: left;
     margin-right: 2.12766%;
     display: inline;
   }
-  /* line 274, ../../app/stylesheets/application.scss */
+  /* line 335, ../../app/stylesheets/application.scss */
   ul.twitter_users li .follow {
     width: 23.40426%;
     float: right;
@@ -498,12 +605,12 @@ ul.twitter_users li h3 {
   }
 }
 
-/* line 282, ../../app/stylesheets/application.scss */
+/* line 343, ../../app/stylesheets/application.scss */
 img.full-width {
   width: 100%;
 }
 
-/* line 286, ../../app/stylesheets/application.scss */
+/* line 347, ../../app/stylesheets/application.scss */
 #draft_items {
   background-color: rgba(0, 0, 0, 0.1);
   color: #222;
@@ -515,23 +622,23 @@ img.full-width {
   font-family: "ratio", sans-serif;
 }
 
-/* line 297, ../../app/stylesheets/application.scss */
+/* line 358, ../../app/stylesheets/application.scss */
 .content {
   clear: both;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 301, ../../app/stylesheets/application.scss */
+/* line 362, ../../app/stylesheets/application.scss */
 .content ul li {
   list-style-type: circle;
   margin-left: 2em;
 }
 
-/* line 308, ../../app/stylesheets/application.scss */
+/* line 369, ../../app/stylesheets/application.scss */
 .footer {
   margin-top: 1.5em;
 }
-/* line 310, ../../app/stylesheets/application.scss */
+/* line 371, ../../app/stylesheets/application.scss */
 .footer h2 {
   font-family: "ratio", sans-serif;
   font-weight: 700;
@@ -539,7 +646,7 @@ img.full-width {
   line-height: 2em;
   text-align: left;
 }
-/* line 316, ../../app/stylesheets/application.scss */
+/* line 377, ../../app/stylesheets/application.scss */
 .footer .top_footer, .footer .bottom_footer {
   width: 100%;
   float: right;
@@ -550,22 +657,66 @@ img.full-width {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 321, ../../app/stylesheets/application.scss */
+/* line 382, ../../app/stylesheets/application.scss */
 .footer .left_footer {
   width: 23.40426%;
   float: left;
   margin-right: 2.12766%;
   display: inline;
 }
-/* line 323, ../../app/stylesheets/application.scss */
+/* line 384, ../../app/stylesheets/application.scss */
 .footer .left_footer img {
   width: 100%;
 }
-/* line 327, ../../app/stylesheets/application.scss */
+/* line 388, ../../app/stylesheets/application.scss */
 .footer .right_footer {
   width: 74.46809%;
   float: right;
   margin-right: 0;
   #margin-left: -1em;
   display: inline;
+}
+
+/* line 394, ../../app/stylesheets/application.scss */
+.hack_row {
+  clear: both;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 397, ../../app/stylesheets/application.scss */
+.hack_row .hack {
+  width: 48.71795%;
+  float: left;
+  margin-right: 2.5641%;
+  display: inline;
+}
+/* line 399, ../../app/stylesheets/application.scss */
+.hack_row .hack.last {
+  float: right;
+  margin-right: 0;
+  #margin-left: -1em;
+  display: inline;
+}
+
+/* line 405, ../../app/stylesheets/application.scss */
+.screengrab {
+  height: 0px;
+  overflow: hidden;
+  padding-bottom: 50%;
+  background-color: #eee;
+  border: 1px solid #dddddd;
+}
+
+/* line 413, ../../app/stylesheets/application.scss */
+details:focus, details:active, details, details[open], summary, summary:focus {
+  outline: none;
+}
+
+/* line 415, ../../app/stylesheets/application.scss */
+summary {
+  margin-bottom: 1.5em;
+}
+/* line 417, ../../app/stylesheets/application.scss */
+summary:hover {
+  color: black;
 }
