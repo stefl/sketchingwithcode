@@ -1,0 +1,73 @@
+@mixin moving-button {
+  &:active, &:active {
+    position: relative;
+    top: 1px;
+    border-bottom-width: 2px;
+    margin-bottom: 1px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: no-wrap;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding: 0 1em;
+  text-align: center;
+  @include border-radius(3px);
+  font-weight: 700;
+  font-family: "ratio", sans-serif;
+  -webkit-font-smoothing: antialiased;
+
+  &:focus {
+  }
+
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+
+  &.disabled, &[disabled], fieldset[disabled] & {
+    cursor: default;
+    pointer-events: none;
+    @include opacity(.65);
+  }
+
+  .ss-icon {
+    font-size: .8125em;
+    line-height: 1;
+    margin-right: .5em;
+  }
+}
+
+.btn--small {
+  @include adjust-font-size-to(16px, 4/3);
+}
+
+.btn--bigger {
+  @include adjust-font-size-to(16px, 2);
+  padding: 0 1.5em;
+}
+
+.btn--huge {
+  @include adjust-font-size-to(24px, 2.5);
+}
+
+.btn--full {
+  width: 100%;
+  padding: 0;
+}
+
+.btn {
+  background: #ddd;
+  color: #222;
+  border-style: solid;
+  border-width: 0 0 3px 0;
+  border-color: #bbb;
+  &:hover {
+    background: darken(#ddd, 10%);
+    color: #222;
+  }
+  @include moving-button;
+}

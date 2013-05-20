@@ -18,6 +18,8 @@ $title-link-color: #222;
 
 @import "susy";
 
+@import "buttons";
+
 @include establish-baseline;
 
 ul {
@@ -482,6 +484,22 @@ nav {
       display: block;
     }
   }
+}
+
+.start-reading {
+  @include trailer(4);
+  @include adjust-font-size-to($base-font-size * 2, $lines:2);
+  h2 {
+    a {
+      color: #222;
+    }
+  }
+}
+
+.button {
+  background-color: #aaa;
+  padding: 0.5em;
+
 }
 
 form {

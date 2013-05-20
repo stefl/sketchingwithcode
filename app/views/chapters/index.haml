@@ -1,4 +1,5 @@
 - # coding: utf-8
+- @hide_footer = true
 
 - @post = Post.last
 - hue = @post.hue
@@ -11,27 +12,14 @@
 
 %article
   %p
-    Over the next few weeks you'll see some of my writing about hacking, some things edited from what I've published, some new material, published here.
+    I'm turning
+    %em
+      Sketching with Code
+    into a web book. This is a work in progress, and I'm publishing as I go.
 
   %p
-    It's an experiment in writing for the web. Is it a "web book"? I don't know yet, but I'm sure it's going to be interesting.
+    Comments, thoughts and suggestions gratefully received.
 
-  %p
-    %strong
-      Add your email for updates
-  :plain
-    <div id="mc_embed_signup">
-    <form action="http://makeshift.us6.list-manage.com/subscribe/post?u=c14f3f1491719e4e90f5612c9&amp;id=042a791f81" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-
-    <div class="mc-field-group">
-      <label for="mce-EMAIL">Your email </label>
-      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-    </div>
-    <div id="mce-responses" class="clear">
-      <div class="response" id="mce-error-response" style="display:none"></div>
-      <div class="response" id="mce-success-response" style="display:none"></div>
-    </div>
-    </form>
-    </div>
-
+  .start-reading
+    %h2
+      %a{:href=>"/book/introduction"} Start reading

@@ -46,7 +46,25 @@
       %noscript
         %a{:href => "http://sketchingwithcode.disqus.com/?url=ref"} View the discussion thread.
 
+
+
 .chapter-list
+  .email_updates
+    :plain
+      <div id="mc_embed_signup">
+      <form action="http://makeshift.us6.list-manage.com/subscribe/post?u=c14f3f1491719e4e90f5612c9&amp;id=042a791f81" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+      <div class="mc-field-group">
+        <label for="mce-EMAIL">Get emailed as I write more</label>
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="me@example.com">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn">
+      </div>
+      <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+      </div>
+      </form>
+      </div>
   %ul
     - Chapter.all.order_by([[:ordering, :asc]]).each do |chapter|
       %li
