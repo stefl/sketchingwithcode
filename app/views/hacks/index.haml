@@ -16,7 +16,7 @@
     .hack_row
       - row.each do |hack|
         %article.hack{:class=> row.last == hack ? "last" : ""}
-          .screengrab
+          .screengrab{:style=>"background-color:hsl(#{hack.hue},50%,75%); border-top: 8px solid hsl(#{hack.hue},50%,75%);"}
             - if hack.url && grab = @screengrabs.select {|s| s.slug == hack.url.sub("http://","").gsub(".", "-")}.first
               %img{:src=>"/screengrabs/l/#{grab.slug}.jpg"}
           %h1
@@ -37,4 +37,5 @@
               %p
                 - if hack.meta[:hackday_url]
                   %a.hackday{:href=>hack.meta[:hackday_url]}= hack.meta[:hackday]
-                = hack.meta[:time]
+                - if hack.meta[:time]
+                  = hack.meta[:time]
