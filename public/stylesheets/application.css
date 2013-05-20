@@ -437,7 +437,7 @@ header#header h2 {
 }
 /* line 237, ../../app/stylesheets/application.scss */
 .hacks article.hack p {
-  margin-bottom: 0em;
+  margin-bottom: 1.5em;
 }
 @media (max-width: 30em) {
   /* line 237, ../../app/stylesheets/application.scss */

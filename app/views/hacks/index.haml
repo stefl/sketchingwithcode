@@ -31,10 +31,10 @@
           %details
             %summary About this hack
 
+            = hack.content_html.html_safe
+
             - if hack.meta[:hackday]
               %p
-                %a.hackday{:href=>hack.meta[:hackday_url]}= hack.meta[:hackday]
-                %br
+                - if hack.meta[:hackday_url]
+                  %a.hackday{:href=>hack.meta[:hackday_url]}= hack.meta[:hackday]
                 = hack.meta[:time]
-
-            = hack.content_html.html_safe
