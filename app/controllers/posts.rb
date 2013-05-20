@@ -15,6 +15,10 @@ Sketching.controllers :posts do
     haml :"posts/show", :layout => !request.xhr?
   end
 
+  get :book, :map => "/book" do
+    haml :"pages/book", :layout => !request.xhr?
+  end
+
   post :refresh, :map => "/posts/refresh" do
     Resque.enqueue(PostFetching)
     Resque.enqueue(ScreengrabFetching)

@@ -1,0 +1,35 @@
+- # coding: utf-8
+
+- @post = Post.last
+- hue = @post.hue
+- content_for :header do
+  %a.back_link{:href=>"/"} Sketching with Code
+  .mega{:style=>"background-color:hsl(#{hue},50%,75%);"}
+    %h1
+      Hack, play, learn… write?
+
+%h1
+  I'm publishing this as a web book
+
+%article
+  %p
+    I'm not yet sure what that means, but over the next few weeks you'll see some of the posts I've published turned into a short web book.
+
+  %p
+    %strong
+      Add your email for updates
+  :plain
+    <div id="mc_embed_signup">
+    <form action="http://makeshift.us6.list-manage.com/subscribe/post?u=c14f3f1491719e4e90f5612c9&amp;id=042a791f81" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+    <div class="mc-field-group">
+      <label for="mce-EMAIL">Your email </label>
+      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+    </div>
+    <div id="mce-responses" class="clear">
+      <div class="response" id="mce-error-response" style="display:none"></div>
+      <div class="response" id="mce-success-response" style="display:none"></div>
+    </div>
+    </form>
+    </div>

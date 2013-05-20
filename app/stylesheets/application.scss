@@ -418,3 +418,26 @@ summary {
     color: black;
   }
 }
+
+nav {
+  text-align: center;
+  ul {
+    @include leader(-2);
+    @include trailer(2);
+    @include inline-list();
+    li {
+      display: inline-block;
+      padding-left: 1em;
+      padding-right: 1em;
+      @include adjust-font-size-to($base-font-size * 1.5, $lines:2);
+    }
+  }
+}
+
+form {
+  padding: 1em;
+  background-color: #f6f6f6;
+  label, input[type=text], input[type=submit], input[type=email] {
+    @include adjust-font-size-to($base-font-size * 1.5, $lines:2);
+  }
+}
