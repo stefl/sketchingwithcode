@@ -17,7 +17,7 @@
       - row.each do |hack|
         %article.hack{:class=> row.last == hack ? "last" : ""}
           .screengrab{:style=>"background-color:hsl(#{hack.hue},50%,75%); border-top: 8px solid hsl(#{hack.hue},50%,75%);"}
-            - if hack.url && grab = @screengrabs.select {|s| s.slug == hack.url.sub("http://","").gsub(".", "-")}.first
+            - if hack.url && grab = @screengrabs.select {|s| s.slug == hack.url.sub("http://","").gsub(".", "-").gsub("/","-")}.first
               %img{:src=>"/screengrabs/l/#{grab.slug}.jpg"}
           %h1
             - if hack.url
